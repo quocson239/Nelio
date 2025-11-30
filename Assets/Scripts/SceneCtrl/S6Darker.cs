@@ -165,6 +165,7 @@ public class S6Darker : MonoBehaviour
 
     IEnumerator PlayScene6()
     {
+        bgMusic.Play();
         nelio.transform.position = new Vector3(-8, -2.3f, 0);
         blackBg.gameObject.SetActive(true);
         hpSystem.SetActive(false);
@@ -248,10 +249,14 @@ public class S6Darker : MonoBehaviour
         yield return new WaitForSeconds(2f);
         nelio.GetComponent<P_Block>().isBlock = false;
         darker.GetComponent<Darker>().enabled = false;
+        bgMusic.Stop();
+        bgMusic2.Play();
         yield return new WaitForSeconds(2f);
         darker.GetComponent<Darker>().enabled = true;
         bossHpSystem.SetActive(true);
         yield return new WaitUntil(() => darker.GetComponent<EnemyLife>().isDead);
+        bgMusic2.Stop();
+        bgMusic.Play();
         nelio.GetComponent<P_Block>().isBlock = true;
         nelio.GetComponent<Rigidbody2D>().linearVelocity = Vector2.zero;
         nelio.GetComponent<Animator>().SetBool("isRun", false);

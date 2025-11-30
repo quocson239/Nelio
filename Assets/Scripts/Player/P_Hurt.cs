@@ -5,6 +5,8 @@ public class P_Hurt : MonoBehaviour
 {
     Rigidbody2D rb;
     Animator animator;
+
+    [SerializeField] AudioSource takedameSound;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -19,6 +21,7 @@ public class P_Hurt : MonoBehaviour
 
     public IEnumerator Hurt()
     {
+        takedameSound.Play();
         animator.SetTrigger("Hurt");
         GetComponent<P_Life>().hp -= 1;
         GetComponent<P_Block>().isBlock = true;        
