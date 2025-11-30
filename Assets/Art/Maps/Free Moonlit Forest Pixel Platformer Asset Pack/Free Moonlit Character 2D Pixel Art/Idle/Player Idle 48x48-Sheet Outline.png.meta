@@ -1,0 +1,377 @@
+fileFormatVersion: 2
+guid: 7a012db8f0ed4ee44a9ce8b05b010f1e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7305696576262946190
+    second: Player Idle 48x48-Sheet Outline_0
+  - first:
+      213: -1960279646510983658
+    second: Player Idle 48x48-Sheet Outline_1
+  - first:
+      213: 1319879594737923567
+    second: Player Idle 48x48-Sheet Outline_2
+  - first:
+      213: 8210711764723799039
+    second: Player Idle 48x48-Sheet Outline_3
+  - first:
+      213: 2584109286747263151
+    second: Player Idle 48x48-Sheet Outline_4
+  - first:
+      213: -7431392361797138340
+    second: Player Idle 48x48-Sheet Outline_5
+  - first:
+      213: 6275452815290112208
+    second: Player Idle 48x48-Sheet Outline_6
+  - first:
+      213: 5730972664628041533
+    second: Player Idle 48x48-Sheet Outline_7
+  - first:
+      213: 199963229893288598
+    second: Player Idle 48x48-Sheet Outline_8
+  - first:
+      213: 4080751192529853415
+    second: Player Idle 48x48-Sheet Outline_9
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Player Idle 48x48-Sheet Outline_0
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 6
+        width: 22
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8db0f0345c036560800000000000000
+      internalID: 7305696576262946190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Idle 48x48-Sheet Outline_1
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 6
+        width: 23
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 616d8492c00bbc4e0800000000000000
+      internalID: -1960279646510983658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Idle 48x48-Sheet Outline_2
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 6
+        width: 23
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe5f3a69f77215210800000000000000
+      internalID: 1319879594737923567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Idle 48x48-Sheet Outline_3
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 6
+        width: 23
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff39b7909de42f170800000000000000
+      internalID: 8210711764723799039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Idle 48x48-Sheet Outline_4
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 6
+        width: 23
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa0db5184b99cd320800000000000000
+      internalID: 2584109286747263151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Idle 48x48-Sheet Outline_5
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 6
+        width: 23
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c58c78825046ed890800000000000000
+      internalID: -7431392361797138340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Idle 48x48-Sheet Outline_6
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 6
+        width: 23
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d897143613e61750800000000000000
+      internalID: 6275452815290112208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Idle 48x48-Sheet Outline_7
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 6
+        width: 23
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d37d0a44641888f40800000000000000
+      internalID: 5730972664628041533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Idle 48x48-Sheet Outline_8
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 6
+        width: 23
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 692ede58f7966c200800000000000000
+      internalID: 199963229893288598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Idle 48x48-Sheet Outline_9
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 6
+        width: 23
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7eb5e7fb69db1a830800000000000000
+      internalID: 4080751192529853415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Player Idle 48x48-Sheet Outline_0: 7305696576262946190
+      Player Idle 48x48-Sheet Outline_1: -1960279646510983658
+      Player Idle 48x48-Sheet Outline_2: 1319879594737923567
+      Player Idle 48x48-Sheet Outline_3: 8210711764723799039
+      Player Idle 48x48-Sheet Outline_4: 2584109286747263151
+      Player Idle 48x48-Sheet Outline_5: -7431392361797138340
+      Player Idle 48x48-Sheet Outline_6: 6275452815290112208
+      Player Idle 48x48-Sheet Outline_7: 5730972664628041533
+      Player Idle 48x48-Sheet Outline_8: 199963229893288598
+      Player Idle 48x48-Sheet Outline_9: 4080751192529853415
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
