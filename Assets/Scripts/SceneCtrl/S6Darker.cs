@@ -52,6 +52,7 @@ public class S6Darker : MonoBehaviour
     [SerializeField] AudioSource bgMusic;
     [SerializeField] AudioSource bgMusic2;
     [SerializeField] AudioSource portalSound;
+    [SerializeField] AudioSource darkerTeleSound;
     void Start()
     {
         StartCoroutine(PlayScene6());
@@ -75,91 +76,7 @@ public class S6Darker : MonoBehaviour
 
     IEnumerator Test()
     {
-        yield return new WaitUntil(() => nelio.transform.position.x >= 47f);
-        cam2.SetActive(true);
-        wall1.SetActive(true);
-        wall2.SetActive(true);
-        nelio.GetComponent<P_Block>().isBlock = false;
-        fire1.SetActive(true);
-        yield return new WaitForSeconds(1f);
-        fire2.SetActive(true);
-        yield return new WaitForSeconds(1f);
-        fire3.SetActive(true);
-        yield return new WaitUntil(() => fire1.activeSelf && fire2.activeSelf && fire3.activeSelf);
-        nelio.GetComponent<P_Block>().isBlock = true;
-        nelio.GetComponent<Rigidbody2D>().linearVelocity = Vector2.zero;
-        nelio.GetComponent<Animator>().SetBool("isRun", false);
-        yield return new WaitForSeconds(1f);
-        d_head.SetActive(true);
-        yield return new WaitForSeconds(1f);
-        d_blade.SetActive(true);
-        yield return new WaitForSeconds(1f);
-        light_throne.SetActive(true);
-        yield return new WaitForSeconds(1f);
-        light_backthrone.SetActive(true);
         yield return new WaitForSeconds(2f);
-        dialog3Start.SetActive(true);
-        //
-        yield return new WaitUntil(() => dialog3Start.GetComponent<Dialog>().index > dialog3Start.GetComponent<Dialog>().lines.Length - 1
-                                    && !dialog3Start.activeSelf);
-        yield return new WaitForSeconds(2f);
-        d_sit.SetActive(false);
-        GameObject d = Instantiate(d_tele1, d_sit.transform.position, Quaternion.identity);
-        Destroy(d, 1 / 3f);
-        GameObject d2 = Instantiate(d_tele2, darker.transform.position, Quaternion.identity);
-        Destroy(d2, 0.5f);
-        yield return new WaitForSeconds(1 / 3f);
-        darker.transform.localScale = new Vector3(-1, 1, 1);
-        darker.SetActive(true);
-        yield return new WaitForSeconds(2f);
-        nelio.GetComponent<P_Block>().isBlock = false;
-        darker.GetComponent<Darker>().enabled = false;
-        yield return new WaitForSeconds(2f);
-        darker.GetComponent<Darker>().enabled = true;
-        bossHpSystem.SetActive(true);
-        yield return new WaitUntil(() => darker.GetComponent<EnemyLife>().isDead);
-        nelio.GetComponent<P_Block>().isBlock = true;
-        nelio.GetComponent<Rigidbody2D>().linearVelocity = Vector2.zero;
-        nelio.GetComponent<Animator>().SetBool("isRun", false);
-        yield return new WaitForSeconds(2f);
-        dialog4Start.SetActive(true);
-        yield return new WaitUntil(() => dialog4End.GetComponent<Dialog>().index > dialog4End.GetComponent<Dialog>().lines.Length - 1
-                                    && !dialog4End.activeSelf);
-        yield return new WaitForSeconds(2f);
-        GameObject d3 = Instantiate(d_tele1, darker.transform.position + new Vector3(0,-0.5f,0), Quaternion.identity);
-        Destroy(d3, 1 / 3f);
-        yield return new WaitForSeconds(1/3f);
-        darker.SetActive(false);
-        bossHpSystem.SetActive(false);
-        yield return StartCoroutine(VicPanShow());
-        yield return new WaitForSeconds(1f);
-        gift.SetActive(true);
-        tutorialE.SetActive(true);
-        yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.E));
-        yield return new WaitForSeconds(0.3f);
-        gift.SetActive(false);
-        tutorialE.SetActive(false);
-        yield return new WaitForSeconds(1f);
-        yield return new WaitForSeconds(0.5f);
-        portalSound.Play();
-        yield return new WaitForSeconds(0.75f);
-        portal2.SetActive(true);
-        yield return new WaitForSeconds(2f);
-        cam2.SetActive(false);
-        yield return new WaitForSeconds(2f);
-        nelio.GetComponent<P_Block>().isBlock = false;
-        yield return new WaitUntil(() => nelio.transform.position.x >= 63.5f);
-        nelio.SetActive(false);
-        nelio.GetComponent<P_Block>().isBlock = true;
-        nelio.GetComponent<Rigidbody2D>().linearVelocity = Vector2.zero;
-        nelio.GetComponent<Animator>().SetBool("isRun", false);
-        yield return new WaitForSeconds(2f);
-        portalSound.Play();
-        yield return new WaitForSeconds(0.75f);
-        portal2.SetActive(false);
-        yield return StartCoroutine(NextScene7());
-
-
 
     }
 
@@ -239,6 +156,7 @@ public class S6Darker : MonoBehaviour
                                     && !dialog3Start.activeSelf);
         yield return new WaitForSeconds(2f);
         d_sit.SetActive(false);
+        darkerTeleSound.Play();
         GameObject d = Instantiate(d_tele1, d_sit.transform.position, Quaternion.identity);
         Destroy(d, 1 / 3f);
         GameObject d2 = Instantiate(d_tele2, darker.transform.position, Quaternion.identity);
@@ -265,6 +183,7 @@ public class S6Darker : MonoBehaviour
         yield return new WaitUntil(() => dialog4End.GetComponent<Dialog>().index > dialog4End.GetComponent<Dialog>().lines.Length - 1
                                     && !dialog4End.activeSelf);
         yield return new WaitForSeconds(2f);
+        darkerTeleSound.Play();
         GameObject d3 = Instantiate(d_tele1, darker.transform.position + new Vector3(0, -0.5f, 0), Quaternion.identity);
         Destroy(d3, 1 / 3f);
         yield return new WaitForSeconds(1 / 3f);

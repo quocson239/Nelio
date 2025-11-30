@@ -34,6 +34,8 @@ public class Darker : MonoBehaviour
 
     [Header("Darker Sounds")]
     [SerializeField] AudioSource lightningSound;
+    [SerializeField] AudioSource darkerTeleSound;
+    [SerializeField] AudioSource slashSound;
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -196,6 +198,7 @@ public class Darker : MonoBehaviour
         yield return new WaitForSeconds(5f / 6f);
         rb.AddForce(direct * dashForce, ForceMode2D.Impulse);
         yield return new WaitForSeconds(1 / 6f);
+        slashSound.Play();
         HitA1();
         rb.gravityScale = 1f;
         rb.linearVelocity = Vector2.zero;
@@ -211,10 +214,12 @@ public class Darker : MonoBehaviour
         yield return new WaitForSeconds(5f / 6f);
         rb.AddForce(direct * dashForce, ForceMode2D.Impulse);
         yield return new WaitForSeconds(1 / 6f);
+        slashSound.Play();
         HitA1();
         rb.gravityScale = 1f;
         rb.linearVelocity = Vector2.zero;
         yield return new WaitForSeconds(2 / 3f);
+        slashSound.Play();
         HitA2();
         yield return new WaitForSeconds(0.5f);
         isAction = false;
@@ -224,6 +229,7 @@ public class Darker : MonoBehaviour
         isAction = true;
         animator.SetTrigger("A3");
         yield return new WaitForSeconds(0.5f);
+        slashSound.Play();
         HitA2();
         yield return new WaitForSeconds(0.5f);
         isAction = false;
@@ -407,10 +413,12 @@ public class Darker : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         rb.constraints = RigidbodyConstraints2D.FreezeAll;
         GetComponent<SpriteRenderer>().enabled = false;
+        darkerTeleSound.Play();
         GameObject d = Instantiate(d_teleport, transform.position, Quaternion.identity);
         Destroy(d, 1 / 3f);
         transform.position = nelio.transform.position + new Vector3(0, 2f, 0);
         yield return new WaitForSeconds(1 / 3f);
+        darkerTeleSound.Play();
         GameObject d2 = Instantiate(d_teleport2, transform.position, Quaternion.identity);
         Destroy(d2, 0.5f);
         yield return new WaitForSeconds(1 / 3f);
