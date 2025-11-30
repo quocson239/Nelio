@@ -35,6 +35,8 @@ public class SceneControll : MonoBehaviour
     public GameObject map2;
 
     public GameObject ShakeCam;
+
+    public GameObject fireEffect;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -136,7 +138,8 @@ public class SceneControll : MonoBehaviour
 
         map2.SetActive(false);
         map1.SetActive(true);
-
+        Warning.SetActive(false);
+        fireEffect.SetActive(false);
         dialog13Start.SetActive(true);
         yield return new WaitUntil(() => dialog13Start.GetComponent<Dialog>().index > dialog13Start.GetComponent<Dialog>().lines.Length - 1
                                    && !dialog13Start.activeSelf);
@@ -146,7 +149,6 @@ public class SceneControll : MonoBehaviour
         cam3.Priority = -1;
         Nelio.GetComponent<P_Block>().isBlock = false;
         yield return new WaitUntil(() => Nelio.transform.position.x < 30.16f);
-        Warning.SetActive(false);
         SwitchToCam1();
     }
     public void TriggerDialog3()

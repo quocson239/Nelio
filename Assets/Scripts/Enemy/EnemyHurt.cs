@@ -19,7 +19,12 @@ public class EnemyHurt : MonoBehaviour
 
     public IEnumerator Hurt()
     {
-        GetComponent<Undead_Controller>().bossHealth -= 1;
+        if(GetComponent<Undead_Controller>() != null)
+            GetComponent<Undead_Controller>().TakeDamage(1);
+        if(GetComponent<BeastGhostController>() != null)
+            GetComponent<BeastGhostController>().TakeDamage(1);
+        if (GetComponent<SummonMinion_Controller>() != null)
+            GetComponent<SummonMinion_Controller>().TakeDamage(1);
         Material cur = sr.material;
         sr.material = white;
         yield return new WaitForSeconds(0.1f);

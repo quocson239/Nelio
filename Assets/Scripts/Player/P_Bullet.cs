@@ -32,31 +32,6 @@ public class P_Bullet : MonoBehaviour
         {
             HitSound.Play();
             StartCoroutine(c.GetComponent<EnemyHurt>().Hurt());
-            bool damageApplied = false;
-            SummonMinion_Controller minionScript = c.GetComponent<SummonMinion_Controller>();
-            if (minionScript != null)
-            {
-                minionScript.TakeDamage(1);
-                damageApplied = true;
-            }
-            if (!damageApplied)
-            {
-                Undead_Controller undeadScript = c.GetComponent<Undead_Controller>();
-                if (undeadScript != null)
-                {
-                    undeadScript.TakeDamage(1);
-                    damageApplied = true;
-                }
-            }
-            if (!damageApplied)
-            {
-                BeastGhostController beastScript = c.GetComponent<BeastGhostController>();
-                if (beastScript != null)
-                {
-                    beastScript.TakeDamage(1);
-                    damageApplied = true;
-                }
-            }
             GameObject h = Instantiate(hitGhost,
                 c.transform.position + (transform.position - c.transform.position).normalized * 0.25f + new Vector3(0, -0.15f, 0),
                 Quaternion.Euler(0, 0, Random.Range(60f, 270f)));

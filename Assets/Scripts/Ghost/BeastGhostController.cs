@@ -18,7 +18,7 @@ public class BeastGhostController : MonoBehaviour
 
     private SpriteRenderer spriteRenderer;
     public int maxHealth = 10;
-    private int currentHealth;
+    public int currentHealth;
     public bool isDead = false;
 
     public static BeastGhostController instance;
