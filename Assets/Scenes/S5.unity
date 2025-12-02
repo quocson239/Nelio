@@ -14774,6 +14774,10 @@ MonoBehaviour:
   arrow: {fileID: 7544916763302024923, guid: cd10eb66290042e4da899efbc3f79c99, type: 3}
   firePos: {fileID: 925009166}
   arrowSpeed: 15
+  hitboxA1: {fileID: 0}
+  hitboxA2: {fileID: 0}
+  hitboxA3: {fileID: 0}
+  nelio: {fileID: 0}
   BowSound: {fileID: 1795158164}
 --- !u!1 &241902583
 GameObject:

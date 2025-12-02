@@ -24,7 +24,7 @@ public class P_Hurt : MonoBehaviour
         takedameSound.Play();
         animator.SetTrigger("Hurt");
         GetComponent<P_Life>().hp -= 1;
-        GetComponent<P_Block>().isBlock = true;        
+        GetComponent<P_Block>().isBlock = true;                
         GetComponent<P_Dash>().isImmute = true;
         rb.linearVelocity = Vector2.zero;
         yield return new WaitForSeconds(0.5f);

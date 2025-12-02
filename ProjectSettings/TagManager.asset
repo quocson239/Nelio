@@ -12,6 +12,7 @@ TagManager:
   - Dummy2
   - Bottle
   - Fire
+  - Dog
   layers:
   - Default
   - TransparentFX

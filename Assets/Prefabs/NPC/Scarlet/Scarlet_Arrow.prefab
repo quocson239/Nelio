@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7745825766414277842}
   - component: {fileID: 688344524819667359}
   - component: {fileID: 6489026516659087075}
-  - component: {fileID: 7857860290153704594}
+  - component: {fileID: 6836849561575890988}
   m_Layer: 0
   m_Name: Scarlet_Arrow
   m_TagString: Untagged
@@ -185,8 +185,8 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!114 &7857860290153704594
+  m_Constraints: 4
+--- !u!114 &6836849561575890988
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -195,6 +195,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 7544916763302024923}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1fcbd326fd03f4745ad7008a770acd7f, type: 3}
+  m_Script: {fileID: 11500000, guid: 23fd8c59bb4938043b95114b7ceeecc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

@@ -15789,8 +15789,8 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!4 &256154946 stripped
-Transform:
+--- !u!224 &256154946 stripped
+RectTransform:
   m_CorrespondingSourceObject: {fileID: 1535285275339278597, guid: 2eaad32e659aaea439dbc0a3fa53cc58, type: 3}
   m_PrefabInstance: {fileID: 797005855}
   m_PrefabAsset: {fileID: 0}
@@ -15865,7 +15865,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dashForce: 8
   dashGhost: {fileID: 2120344066667146847, guid: bc72d5f940346204aab1da38523f4ffc, type: 3}
+  dashCD: 0
   isDash: 0
+  isImmute: 0
   dashSound: {fileID: 789752905}
 --- !u!114 &276718493
 MonoBehaviour:
@@ -18108,8 +18110,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!4 &397530986 stripped
-Transform:
+--- !u!224 &397530986 stripped
+RectTransform:
   m_CorrespondingSourceObject: {fileID: 1535285275339278597, guid: 2eaad32e659aaea439dbc0a3fa53cc58, type: 3}
   m_PrefabInstance: {fileID: 327881468}
   m_PrefabAsset: {fileID: 0}
@@ -68216,8 +68218,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2044108340}
   m_CullTransparentMesh: 1
---- !u!4 &2053998753 stripped
-Transform:
+--- !u!224 &2053998753 stripped
+RectTransform:
   m_CorrespondingSourceObject: {fileID: 1535285275339278597, guid: 2eaad32e659aaea439dbc0a3fa53cc58, type: 3}
   m_PrefabInstance: {fileID: 333473650}
   m_PrefabAsset: {fileID: 0}

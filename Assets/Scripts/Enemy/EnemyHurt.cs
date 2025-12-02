@@ -21,7 +21,7 @@ public class EnemyHurt : MonoBehaviour
 
     public IEnumerator Hurt()
     {        
-        GetComponent<EnemyLife>().hp -= 1;
+        if(GetComponent<EnemyLife>() != null) GetComponent<EnemyLife>().hp -= 1;
         Material cur = sr.material;
         sr.material = white;
         yield return new WaitForSeconds(0.1f);

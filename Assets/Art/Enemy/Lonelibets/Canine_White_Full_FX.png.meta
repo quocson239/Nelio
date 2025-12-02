@@ -184,7 +184,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Canine_White_Full_FX_0
+      name: I1
       rect:
         serializedVersion: 2
         x: 3
@@ -192,7 +192,7 @@ TextureImporter:
         width: 36
         height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -206,7 +206,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Canine_White_Full_FX_1
+      name: I2
       rect:
         serializedVersion: 2
         x: 51
@@ -214,7 +214,7 @@ TextureImporter:
         width: 35
         height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -228,7 +228,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Canine_White_Full_FX_2
+      name: I3
       rect:
         serializedVersion: 2
         x: 100
@@ -236,7 +236,7 @@ TextureImporter:
         width: 35
         height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -250,7 +250,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Canine_White_Full_FX_3
+      name: I4
       rect:
         serializedVersion: 2
         x: 148
@@ -258,7 +258,7 @@ TextureImporter:
         width: 36
         height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -272,7 +272,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Canine_White_Full_FX_4
+      name: J1
       rect:
         serializedVersion: 2
         x: 194
@@ -280,7 +280,7 @@ TextureImporter:
         width: 45
         height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -294,7 +294,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Canine_White_Full_FX_5
+      name: J2
       rect:
         serializedVersion: 2
         x: 242
@@ -302,7 +302,7 @@ TextureImporter:
         width: 46
         height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -316,7 +316,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Canine_White_Full_FX_6
+      name: J3
       rect:
         serializedVersion: 2
         x: 3
@@ -324,7 +324,7 @@ TextureImporter:
         width: 44
         height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -338,7 +338,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Canine_White_Full_FX_7
+      name: J4
       rect:
         serializedVersion: 2
         x: 51
@@ -346,7 +346,7 @@ TextureImporter:
         width: 43
         height: 22
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -360,7 +360,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Canine_White_Full_FX_8
+      name: J5
       rect:
         serializedVersion: 2
         x: 98
@@ -368,7 +368,7 @@ TextureImporter:
         width: 45
         height: 18
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -382,7 +382,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Canine_White_Full_FX_9
+      name: J6
       rect:
         serializedVersion: 2
         x: 146
@@ -390,7 +390,7 @@ TextureImporter:
         width: 43
         height: 18
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -404,7 +404,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Canine_White_Full_FX_10
+      name: J7
       rect:
         serializedVersion: 2
         x: 194
@@ -412,7 +412,7 @@ TextureImporter:
         width: 42
         height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -426,7 +426,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Canine_White_Full_FX_11
+      name: R1
       rect:
         serializedVersion: 2
         x: 243
@@ -434,7 +434,7 @@ TextureImporter:
         width: 43
         height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -448,7 +448,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Canine_White_Full_FX_12
+      name: R2
       rect:
         serializedVersion: 2
         x: 4
@@ -456,7 +456,7 @@ TextureImporter:
         width: 45
         height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -470,7 +470,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Canine_White_Full_FX_13
+      name: R3
       rect:
         serializedVersion: 2
         x: 51
@@ -478,7 +478,7 @@ TextureImporter:
         width: 46
         height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -492,7 +492,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Canine_White_Full_FX_14
+      name: R4
       rect:
         serializedVersion: 2
         x: 98
@@ -500,7 +500,7 @@ TextureImporter:
         width: 46
         height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -514,7 +514,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Canine_White_Full_FX_15
+      name: R5
       rect:
         serializedVersion: 2
         x: 146
@@ -522,7 +522,7 @@ TextureImporter:
         width: 45
         height: 22
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -536,7 +536,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Canine_White_Full_FX_16
+      name: R6
       rect:
         serializedVersion: 2
         x: 194
@@ -544,7 +544,7 @@ TextureImporter:
         width: 43
         height: 22
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -558,7 +558,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Canine_White_Full_FX_17
+      name: S1
       rect:
         serializedVersion: 2
         x: 243
@@ -566,7 +566,7 @@ TextureImporter:
         width: 42
         height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -580,7 +580,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Canine_White_Full_FX_18
+      name: S2
       rect:
         serializedVersion: 2
         x: 3
@@ -588,7 +588,7 @@ TextureImporter:
         width: 41
         height: 22
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -602,7 +602,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Canine_White_Full_FX_19
+      name: D1
       rect:
         serializedVersion: 2
         x: 51
@@ -610,7 +610,7 @@ TextureImporter:
         width: 41
         height: 22
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -624,7 +624,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Canine_White_Full_FX_20
+      name: D2
       rect:
         serializedVersion: 2
         x: 100
@@ -632,7 +632,7 @@ TextureImporter:
         width: 34
         height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -646,7 +646,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Canine_White_Full_FX_21
+      name: D3
       rect:
         serializedVersion: 2
         x: 147
@@ -654,7 +654,7 @@ TextureImporter:
         width: 42
         height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -668,7 +668,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Canine_White_Full_FX_22
+      name: D4
       rect:
         serializedVersion: 2
         x: 195
@@ -676,7 +676,7 @@ TextureImporter:
         width: 41
         height: 22
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -690,7 +690,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Canine_White_Full_FX_23
+      name: D5
       rect:
         serializedVersion: 2
         x: 243
@@ -698,7 +698,7 @@ TextureImporter:
         width: 44
         height: 17
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -712,7 +712,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Canine_White_Full_FX_24
+      name: D6
       rect:
         serializedVersion: 2
         x: 4
@@ -720,7 +720,7 @@ TextureImporter:
         width: 44
         height: 14
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -734,7 +734,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Canine_White_Full_FX_25
+      name: D7
       rect:
         serializedVersion: 2
         x: 52
@@ -742,7 +742,7 @@ TextureImporter:
         width: 45
         height: 10
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -756,7 +756,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Canine_White_Full_FX_26
+      name: D8
       rect:
         serializedVersion: 2
         x: 100
@@ -764,7 +764,7 @@ TextureImporter:
         width: 45
         height: 9
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -778,7 +778,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Canine_White_Full_FX_27
+      name: D9
       rect:
         serializedVersion: 2
         x: 148
@@ -786,7 +786,7 @@ TextureImporter:
         width: 45
         height: 9
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -800,7 +800,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Canine_White_Full_FX_28
+      name: D10
       rect:
         serializedVersion: 2
         x: 196
@@ -808,7 +808,7 @@ TextureImporter:
         width: 45
         height: 9
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -825,7 +825,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 9067bb9cc29c6b4449319e565920fdfd
     internalID: 0
     vertices: []
     indices: 
@@ -835,35 +835,35 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Canine_White_Full_FX_0: 643003537719501417
-      Canine_White_Full_FX_1: 25492918559972772
-      Canine_White_Full_FX_10: -4969035160623387971
-      Canine_White_Full_FX_11: -4561523685334289895
-      Canine_White_Full_FX_12: 6350859095973246490
-      Canine_White_Full_FX_13: -2930992256515189245
-      Canine_White_Full_FX_14: -3257560877989640046
-      Canine_White_Full_FX_15: 1522873182921645134
-      Canine_White_Full_FX_16: 2105982171615395367
-      Canine_White_Full_FX_17: 8369529754884940099
-      Canine_White_Full_FX_18: 5920141523868912507
-      Canine_White_Full_FX_19: -5672468431767599654
-      Canine_White_Full_FX_2: 4322545723235667912
-      Canine_White_Full_FX_20: -570140365375725493
-      Canine_White_Full_FX_21: 7757841781622710012
-      Canine_White_Full_FX_22: 5033399192269929211
-      Canine_White_Full_FX_23: -4910750976403622421
-      Canine_White_Full_FX_24: 6359382831391028402
-      Canine_White_Full_FX_25: 4429677243405308076
-      Canine_White_Full_FX_26: -5054179892311316792
-      Canine_White_Full_FX_27: 7094820603755462882
-      Canine_White_Full_FX_28: 6570546520639268731
-      Canine_White_Full_FX_3: -3555534715160978147
-      Canine_White_Full_FX_4: -8488444266231244389
-      Canine_White_Full_FX_5: -5262737672455927651
-      Canine_White_Full_FX_6: 6277277933090912191
-      Canine_White_Full_FX_7: 4691170186228286221
-      Canine_White_Full_FX_8: -4035959866896691506
-      Canine_White_Full_FX_9: -3344969400699997178
+      D1: -5672468431767599654
+      D10: 6570546520639268731
+      D2: -570140365375725493
+      D3: 7757841781622710012
+      D4: 5033399192269929211
+      D5: -4910750976403622421
+      D6: 6359382831391028402
+      D7: 4429677243405308076
+      D8: -5054179892311316792
+      D9: 7094820603755462882
+      I1: 643003537719501417
+      I2: 25492918559972772
+      I3: 4322545723235667912
+      I4: -3555534715160978147
+      J1: -8488444266231244389
+      J2: -5262737672455927651
+      J3: 6277277933090912191
+      J4: 4691170186228286221
+      J5: -4035959866896691506
+      J6: -3344969400699997178
+      J7: -4969035160623387971
+      R1: -4561523685334289895
+      R2: 6350859095973246490
+      R3: -2930992256515189245
+      R4: -3257560877989640046
+      R5: 1522873182921645134
+      R6: 2105982171615395367
+      S1: 8369529754884940099
+      S2: 5920141523868912507
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

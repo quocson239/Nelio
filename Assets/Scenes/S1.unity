@@ -1520,8 +1520,8 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2eaad32e659aaea439dbc0a3fa53cc58, type: 3}
---- !u!4 &206368684 stripped
-Transform:
+--- !u!224 &206368684 stripped
+RectTransform:
   m_CorrespondingSourceObject: {fileID: 1535285275339278597, guid: 2eaad32e659aaea439dbc0a3fa53cc58, type: 3}
   m_PrefabInstance: {fileID: 206368683}
   m_PrefabAsset: {fileID: 0}
@@ -2081,7 +2081,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dashForce: 8
   dashGhost: {fileID: 2120344066667146847, guid: bc72d5f940346204aab1da38523f4ffc, type: 3}
+  dashCD: 0
   isDash: 0
+  isImmute: 0
   dashSound: {fileID: 1318582270}
 --- !u!114 &324273192
 MonoBehaviour:
@@ -10942,8 +10944,8 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2eaad32e659aaea439dbc0a3fa53cc58, type: 3}
---- !u!4 &2097095889 stripped
-Transform:
+--- !u!224 &2097095889 stripped
+RectTransform:
   m_CorrespondingSourceObject: {fileID: 1535285275339278597, guid: 2eaad32e659aaea439dbc0a3fa53cc58, type: 3}
   m_PrefabInstance: {fileID: 2097095888}
   m_PrefabAsset: {fileID: 0}

@@ -71,18 +71,7 @@ public class Darker : MonoBehaviour
             {
                 StartCoroutine(Combo2());
             }
-            if (Input.GetKeyDown(KeyCode.Alpha1) && !isAction)
-            {
-                StartCoroutine(RA1());
-            }
-            //if (Input.GetKeyDown(KeyCode.Alpha2) && !isAction)
-            //{
-            //    StartCoroutine(Combo2());
-            //}
-            //if (Input.GetKeyDown(KeyCode.Alpha3) && !isAction)
-            //{
-            //    StartCoroutine(A3());
-            //}
+            
             if (!isAction)
             {
                 Flip();
