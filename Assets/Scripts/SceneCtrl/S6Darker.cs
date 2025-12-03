@@ -47,14 +47,21 @@ public class S6Darker : MonoBehaviour
     [SerializeField] GameObject eUp;
     [SerializeField] GameObject portal2;
 
+    [SerializeField] Image DeadPan;
+    [SerializeField] TextMeshProUGUI deadTitle;
+    [SerializeField] TextMeshProUGUI deadTitle2;
+
 
     [Header("Audio")]
     [SerializeField] AudioSource bgMusic;
     [SerializeField] AudioSource bgMusic2;
     [SerializeField] AudioSource portalSound;
     [SerializeField] AudioSource darkerTeleSound;
+    [SerializeField] AudioSource victorySound;
+    [SerializeField] AudioSource deadSound;
     void Start()
     {
+        StartCoroutine(NelioDead());
         StartCoroutine(PlayScene6());
         //StartCoroutine(Test());
         
@@ -229,6 +236,13 @@ public class S6Darker : MonoBehaviour
         SceneManager.LoadScene("S7");
     }
 
+    IEnumerator NelioDead()
+    {
+        yield return new WaitUntil(() => nelio.GetComponent<P_Life>().isDead);
+        yield return StartCoroutine(DeadPanShow());
+        yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.R));
+        SceneManager.LoadScene("S6Darker");
+    }
 
     IEnumerator VicPanShow()
     {
@@ -246,5 +260,22 @@ public class S6Darker : MonoBehaviour
         yield return new WaitForSeconds(3f);
         VicPan.gameObject.SetActive(false);
     }
-    
+
+    IEnumerator DeadPanShow()
+    {
+        yield return new WaitForSeconds(0.1f);
+        DeadPan.CrossFadeAlpha(0f, 0.1f, false);
+        deadTitle.CrossFadeAlpha(0f, 0.1f, false);
+        deadTitle2.CrossFadeAlpha(0f, 0.1f, false);
+        yield return new WaitForSeconds(1f);
+        DeadPan.gameObject.SetActive(true);
+        yield return new WaitForSeconds(1f);
+        deadSound.Play();
+        DeadPan.CrossFadeAlpha(220 / 255f, 3f, false);
+        deadTitle.CrossFadeAlpha(1f, 3f, false);
+        yield return new WaitForSeconds(6f);
+        deadTitle2.CrossFadeAlpha(1f, 3f, false);
+        yield return new WaitForSeconds(3f);
+    }
+
 }

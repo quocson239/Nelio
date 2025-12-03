@@ -22,12 +22,15 @@ public class Scarlet_Attack : MonoBehaviour
     Vector2 direct;
     float checkDis;
     bool isDead;
+    bool isTriggerDead;
     float hp;
     float numAction;
 
     public bool isBattle;
     Vector2 direct2;
 
+    float willonCD;
+    float walkCD;
 
     [Header("Sounds")]
     [SerializeField] AudioSource BowSound;
@@ -40,9 +43,12 @@ public class Scarlet_Attack : MonoBehaviour
         anim = GetComponent<Animator>();
         InvokeRepeating("RollAction", 0f, 1f);
     }
-    
+
     void Update()
     {
+        direct = (transform.localScale.x > 0) ? Vector2.left : Vector2.right;
+        if (GetComponent<EnemyLife>() != null) isDead = GetComponent<EnemyLife>().isDead;
+        if (GetComponent<EnemyLife>() != null) hp = GetComponent<EnemyLife>().hp;
         if (!isDead && nelio.GetComponent<P_Life>().hp > 0 && isBattle)
         {
             direct = (transform.localScale.x > 0) ? Vector2.left : Vector2.right;
@@ -51,58 +57,88 @@ public class Scarlet_Attack : MonoBehaviour
 
             if (checkDis > 5 && !isAction && !isInCombo)
             {
-                if (numAction <= 1.5f) StartCoroutine(Walk(5));
-                if (numAction > 1.5f) StartCoroutine(RA());
+                if (numAction <= 1f) StartCoroutine(Walk(5));
+                if (numAction > 1.5f)
+                {
+                    if (Time.time >= willonCD + 10) StartCoroutine(SummonWillon());
+                    else StartCoroutine(RA());
+                }
             }
-            if (checkDis <= 5 && checkDis >= 2.5 && !isAction && !isInCombo)
+            if (checkDis <= 5 && checkDis > 2.5 && !isAction && !isInCombo)
             {
-                StartCoroutine(A5());
-                //if (hp <= 15) StartCoroutine(Combo3());
+                if (numAction <= 1.5f) StartCoroutine(A5());
+                if (numAction > 1.5f)
+                {
+                    if (Time.time >= willonCD + 10) StartCoroutine(SummonWillon());
+                    else StartCoroutine(Walk(2.5f));
+                }
+
             }
-            if (checkDis < 2.5 && !isAction && !isInCombo)
+            if (checkDis <= 2.5 && !isAction && !isInCombo)
             {
-                if (numAction <= 1.5f) StartCoroutine(Combo1());
+                if (numAction <= 1.5f)
+                {
+                    if (hp > 10) StartCoroutine(Combo1());
+                    else if (hp <= 10) StartCoroutine(Combo3());
+                }
                 if (numAction > 1.5f) StartCoroutine(Combo2());
             }
+        }
+        else if (isBattle)
+        {
+            StartCoroutine(StopCo());
+            rb.linearVelocity = Vector2.zero;
+            anim.SetBool("isRun", false);
+        }
+        if (!isTriggerDead && hp <= 0 && isBattle)
+        {
+            isTriggerDead = true;
+            anim.SetBool("isLying", true);
+            transform.localScale = new Vector3((transform.position.x > nelio.transform.position.x) ? 1 : -1, 1, 1);
         }
 
         //Test
         if (!isInCombo && Input.GetKeyDown(KeyCode.Alpha1))
         {
-            StartCoroutine(Walk(6));
+            StartCoroutine(Combo1());
         }
         if (!isInCombo && Input.GetKeyDown(KeyCode.Alpha2))
         {
             StartCoroutine(Combo2());
         }
         if (!isInCombo && Input.GetKeyDown(KeyCode.Alpha3))
-        {            
-            StartCoroutine(A5());
+        {
+            StartCoroutine(Combo3());
         }
         if (!isInCombo && Input.GetKeyDown(KeyCode.Alpha4) && !isAction)
         {
             StartCoroutine(SummonWillon());
-        }        
+        }
 
 
-        if (!isAction)
+        if (!isAction && isBattle)
         {
             Flip();
         }
+    }
+    IEnumerator StopCo()
+    {
+        yield return new WaitForSeconds(0.5f);
+        StopAllCoroutines();
     }
 
 
     IEnumerator Combo1()
     {
-        isInCombo = true;        
+        isInCombo = true;
         yield return StartCoroutine(A1());
-        yield return StartCoroutine(A2());        
+        yield return StartCoroutine(A2());
         yield return new WaitForSeconds(1f);
         isInCombo = false;
     }
     IEnumerator Combo2()
     {
-        isInCombo = true;        
+        isInCombo = true;
         yield return StartCoroutine(A3());
         yield return StartCoroutine(A4());
         yield return StartCoroutine(A5());
@@ -112,10 +148,10 @@ public class Scarlet_Attack : MonoBehaviour
     IEnumerator Combo3()
     {
         isInCombo = true;
-        yield return StartCoroutine(A1());
         yield return StartCoroutine(A2());
-        yield return StartCoroutine(A3());
-        yield return StartCoroutine(A4());
+        yield return StartCoroutine(A2());
+        yield return StartCoroutine(A2());
+        yield return StartCoroutine(A1());
         yield return StartCoroutine(A5());
         yield return new WaitForSeconds(1f);
         isInCombo = false;
@@ -129,28 +165,63 @@ public class Scarlet_Attack : MonoBehaviour
 
     IEnumerator Walk(float dis)
     {
-        yield return new WaitForSeconds(0.25f);
         isAction = true;
+        walkCD = Time.time;
         rb.gravityScale = 0;
-        rb.linearVelocity = direct;
+        rb.linearVelocity = direct * 2;
         anim.SetBool("isRun", true);
-        yield return new WaitUntil(() => checkDis <= dis);
+        yield return new WaitUntil(() => checkDis <= dis || Time.time >= walkCD + 3f);
         rb.linearVelocity = Vector2.zero;
         anim.SetBool("isRun", false);
         isAction = false;
+        yield return new WaitForSeconds(0.2f);
     }
 
 
     IEnumerator SummonWillon()
     {
         isAction = true;
+        willonCD = Time.time;
         direct2 = (willon.transform.localScale.x > 0) ? Vector2.left : Vector2.right;
         WhistleSound.Play();
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(0.2f);
         willon.GetComponent<Lonelibet>().Bark();
         yield return new WaitForSeconds(0.2f);
         willon.GetComponent<Lonelibet>().Bark();
-        yield return new WaitForSeconds(1f);
+        yield return StartCoroutine(WillonAttack());
+        if (willon.transform.localScale.x > 0)
+        {
+            willon.GetComponent<Rigidbody2D>().gravityScale = 0;
+            willon.GetComponent<Rigidbody2D>().linearVelocity = Vector2.left * 3;
+            willon.GetComponent<Animator>().SetBool("isRun", true);
+            yield return new WaitUntil(() => willon.transform.position.x <= 84.5f);
+            willon.GetComponent<Animator>().SetBool("isRun", false);
+            willon.GetComponent<Rigidbody2D>().linearVelocity = Vector2.zero;
+            willon.GetComponent<Rigidbody2D>().gravityScale = 1;
+            yield return new WaitForSeconds(0.5f);
+            willon.transform.localScale = new Vector3(-willon.transform.localScale.x, 1, 1);
+            isAction = false;
+        }
+        else
+        {
+            willon.GetComponent<Rigidbody2D>().gravityScale = 0;
+            willon.GetComponent<Rigidbody2D>().linearVelocity = Vector2.right * 3;
+            willon.GetComponent<Animator>().SetBool("isRun", true);
+            yield return new WaitUntil(() => willon.transform.position.x >= 99.5f);
+            willon.GetComponent<Animator>().SetBool("isRun", false);
+            willon.GetComponent<Rigidbody2D>().linearVelocity = Vector2.zero;
+            willon.GetComponent<Rigidbody2D>().gravityScale = 1;
+            yield return new WaitForSeconds(0.5f);
+            willon.transform.localScale = new Vector3(-willon.transform.localScale.x, 1, 1);
+            isAction = false;
+        }
+
+    }
+
+    IEnumerator WillonAttack()
+    {
+        direct2 = (willon.transform.localScale.x > 0) ? Vector2.left : Vector2.right;
+        yield return new WaitForSeconds(0.5f);
         willon.GetComponent<Rigidbody2D>().gravityScale = 0;
         willon.GetComponent<Rigidbody2D>().linearVelocity = new Vector2(direct2.x * 3, 0);
         willon.GetComponent<Animator>().SetBool("isRun", true);
@@ -159,9 +230,30 @@ public class Scarlet_Attack : MonoBehaviour
         StartCoroutine(willon.GetComponent<Lonelibet>().A1());
         willon.GetComponent<Rigidbody2D>().gravityScale = 1;
         willon.GetComponent<Rigidbody2D>().linearVelocity = new Vector2(direct2.x * 3, 3f);
-        yield return new WaitForSeconds(2f);               
-        willon.transform.localScale = new Vector3(-willon.transform.localScale.x, 1, 1);
-        isAction = false;
+        yield return new WaitForSeconds(1f);
+    }
+
+    public IEnumerator BacktoScarlet()
+    {
+        direct2 = (transform.position - willon.transform.position).normalized;
+        direct2 = new Vector2(direct2.x, 0);
+        yield return new WaitForSeconds(0.1f);
+        if (direct2.x > 0) willon.transform.localScale = new Vector3(-1, 1, 1);
+        else willon.transform.localScale = new Vector3(1, 1, 1);
+        yield return new WaitForSeconds(0.5f);
+        willon.GetComponent<Rigidbody2D>().gravityScale = 0;
+        willon.GetComponent<Rigidbody2D>().linearVelocity = new Vector2(direct2.x * 3, 0);
+        willon.GetComponent<Animator>().SetBool("isRun", true);
+        yield return new WaitUntil(() => Mathf.Abs(willon.transform.position.x - transform.position.x) <= 0.1f);
+        willon.GetComponent<Animator>().SetBool("isRun", false);
+        willon.GetComponent<Rigidbody2D>().linearVelocity = Vector2.zero;
+        willon.GetComponent<Rigidbody2D>().gravityScale = 1;
+        willon.transform.localScale = new Vector3(willon.transform.position.x > nelio.transform.position.x ? 1 : -1, 1, 1);
+        yield return new WaitForSeconds(0.5f);
+        willon.GetComponent<Lonelibet>().Bark();
+        yield return new WaitForSeconds(0.2f);
+        willon.GetComponent<Lonelibet>().Bark();
+        yield return new WaitForSeconds(0.5f);
     }
 
     IEnumerator A1()
@@ -171,8 +263,9 @@ public class Scarlet_Attack : MonoBehaviour
         yield return new WaitForSeconds(2f / 6f);
         SlashSound.Play();
         HitA1();
-        yield return new WaitForSeconds(4 / 6f);                     
+        yield return new WaitForSeconds(4 / 6f);
         isAction = false;
+        yield return new WaitForSeconds(0.2f);
     }
     IEnumerator A2()
     {
@@ -180,11 +273,14 @@ public class Scarlet_Attack : MonoBehaviour
         anim.SetTrigger("A2");
         SlashSound.Play();
         HitA2();
+        rb.linearVelocity = new Vector2(direct.x * 2, 0);
         yield return new WaitForSeconds(1f / 2f);
         SlashSound.Play();
         HitA2();
-        yield return new WaitForSeconds(1 / 2f);                   
+        rb.linearVelocity = new Vector2(direct.x * 2, 0);
+        yield return new WaitForSeconds(1 / 2f);
         isAction = false;
+        yield return new WaitForSeconds(0.2f);
     }
     public IEnumerator A3()
     {
@@ -194,8 +290,9 @@ public class Scarlet_Attack : MonoBehaviour
         yield return new WaitForSeconds(1 / 2f);
         SlashSound.Play();
         HitA2();
-        yield return new WaitForSeconds(1 / 2f);                         
+        yield return new WaitForSeconds(1 / 2f);
         isAction = false;
+        yield return new WaitForSeconds(0.2f);
 
     }
     IEnumerator A4()
@@ -206,8 +303,9 @@ public class Scarlet_Attack : MonoBehaviour
         yield return new WaitForSeconds(4f / 6f);
         SlashSound.Play();
         HitA2();
-        yield return new WaitForSeconds(2 / 6f);                      
+        yield return new WaitForSeconds(2 / 6f);
         isAction = false;
+        yield return new WaitForSeconds(0.2f);
     }
     IEnumerator A5()
     {
@@ -219,10 +317,11 @@ public class Scarlet_Attack : MonoBehaviour
         SlashSound.Play();
         HitGroundSound.Play();
         HitA3();
-        yield return new WaitForSeconds(2 / 6f);   
+        yield return new WaitForSeconds(2 / 6f);
         rb.gravityScale = 1;
         yield return new WaitForSeconds(0.5f);
         isAction = false;
+        yield return new WaitForSeconds(0.2f);
     }
 
 
@@ -232,7 +331,7 @@ public class Scarlet_Attack : MonoBehaviour
         anim.SetTrigger("BA");
         BowSound.Play();
         StartCoroutine(SpawnArrow());
-        yield return new WaitForSeconds(1 + 1/6f);
+        yield return new WaitForSeconds(1 + 1 / 6f);
         isAction = false;
     }
 
@@ -245,7 +344,7 @@ public class Scarlet_Attack : MonoBehaviour
 
     IEnumerator SpawnArrow()
     {
-        yield return new WaitForSeconds(5/6f);
+        yield return new WaitForSeconds(5 / 6f);
         GameObject a = Instantiate(arrow, firePos.transform.position, Quaternion.Euler(0, 0, transform.localScale.x > 0 ? 0 : 180));
         a.GetComponent<Rigidbody2D>().linearVelocity = (transform.localScale.x > 0 ? Vector2.left : Vector2.right) * arrowSpeed;
     }

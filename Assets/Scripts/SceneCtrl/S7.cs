@@ -11,6 +11,7 @@ public class S7 : MonoBehaviour
     [SerializeField] GameObject hpSystem;
     [SerializeField] GameObject scarlet;
     [SerializeField] GameObject scarletBoss;
+    [SerializeField] GameObject whiteLonelibetBoss;
     [SerializeField] Image blackBg;
     [SerializeField] GameObject portal;
 
@@ -33,6 +34,20 @@ public class S7 : MonoBehaviour
     [SerializeField] GameObject W5;
     [SerializeField] GameObject bossHPSystem;
 
+    [SerializeField] Image VicPan;
+    [SerializeField] TextMeshProUGUI vicTitle;
+
+    [SerializeField] Image DeadPan;
+    [SerializeField] TextMeshProUGUI deadTitle;
+    [SerializeField] TextMeshProUGUI deadTitle2;
+
+    [SerializeField] GameObject portal4;
+
+    [SerializeField] GameObject gift;
+    [SerializeField] GameObject tutorialE2;
+    [SerializeField] GameObject eUp2;
+
+    [SerializeField] GameObject teleGhost;
 
     [SerializeField] GameObject dialog1Start;
     [SerializeField] GameObject dialog1End;
@@ -52,6 +67,8 @@ public class S7 : MonoBehaviour
     [SerializeField] GameObject dialog8End;
     [SerializeField] GameObject dialog9Start;
     [SerializeField] GameObject dialog9End;
+    [SerializeField] GameObject dialog10Start;
+    [SerializeField] GameObject dialog10End;
 
     [Header("Camera")]
     [SerializeField] GameObject cam1;
@@ -77,12 +94,16 @@ public class S7 : MonoBehaviour
     [SerializeField] AudioSource bgMusic2;
     [SerializeField] AudioSource portalSound;
     [SerializeField] AudioSource hitSound;
+    [SerializeField] AudioSource victorySound;
+    [SerializeField] AudioSource deadSound;
     void Start()
     {
-        //StartCoroutine(PlayScene7());
-        //StartCoroutine(NelioBlock1());
+        StartCoroutine(NelioBlock1());
+        StartCoroutine(NelioDead());
 
-        StartCoroutine(Test());
+        StartCoroutine(PlayScene7());
+
+        //StartCoroutine(Test());
         //StartCoroutine(Cinematic());
     }
 
@@ -93,80 +114,26 @@ public class S7 : MonoBehaviour
         {
             eUp.SetActive(!Input.GetKey(KeyCode.E));
         }
+        if (tutorialE2.activeSelf)
+        {
+            eUp2.SetActive(!Input.GetKey(KeyCode.E));
+        }
     }
 
     IEnumerator Test()
     {
+        yield return null;
+        bgMusic.Play();
         BlockNelio();
-        nelio.SetActive(false);                
+        nelio.SetActive(false);
+        scarletBoss.SetActive(false);
         //
-        scarletBoss.transform.position = new Vector3(82, -2.5f, 0);
-        nelio.transform.position = new Vector3(81, -1.9f, 0);
-        cam2.SetActive(true);
-        cam1.SetActive(false);
-        yield return new WaitForSeconds(2f);
-        yield return StartCoroutine(BGApear());
-        yield return new WaitForSeconds(2f);
-        yield return new WaitForSeconds(0.5f);
-        portalSound.Play();
-        yield return new WaitForSeconds(0.75f);
-        portal3.SetActive(true);
-        nelio.SetActive(true);
-        nelio.GetComponent<SpriteRenderer>().enabled = false;
-        yield return new WaitForSeconds(1.5f);
-        nelio.GetComponent<Animator>().SetBool("isRun", true);
-        nelio.GetComponent<SpriteRenderer>().enabled = true;
-        nelio.GetComponent<Rigidbody2D>().gravityScale = 0;
-        nelio.GetComponent<Rigidbody2D>().linearVelocity = new Vector2(2f, 0);
-        yield return new WaitUntil(() => nelio.transform.position.x >= 86f);
-        BlockNelio();
-        scarletBoss.SetActive(true);
-        scarletBoss.GetComponent<Rigidbody2D>().gravityScale = 0;
-        scarletBoss.GetComponent<Rigidbody2D>().linearVelocity = new Vector2(2f, 0);
-        scarletBoss.GetComponent<Animator>().SetBool("isRun", true);
-        yield return new WaitUntil(() => scarletBoss.transform.position.x >= 85f);
-        scarletBoss.GetComponent<Rigidbody2D>().linearVelocity = Vector2.zero;
-        scarletBoss.GetComponent<Animator>().SetBool("isRun", false);
-        scarletBoss.GetComponent<Rigidbody2D>().gravityScale = 1;
-        yield return new WaitForSeconds(1f);
-        yield return new WaitForSeconds(0.5f);
-        portalSound.Play();
-        yield return new WaitForSeconds(0.75f);
-        portal3.SetActive(false);
-        yield return new WaitForSeconds(2f);        
-        cam3.SetActive(true);
-        cam2.SetActive(false);
-        W5.SetActive(true);
-        hpSystem.SetActive(true);
-        yield return new WaitForSeconds(2f);
-        whiteLonelibet.GetComponent<Lonelibet>().Bark();
-        yield return new WaitForSeconds(0.3f);
-        whiteLonelibet.GetComponent<Lonelibet>().Bark();
-        yield return new WaitForSeconds(1.5f);
-        dialog7Start.SetActive(true);
-        yield return new WaitUntil(() => dialog7End.GetComponent<Dialog>().index > dialog7End.GetComponent<Dialog>().lines.Length - 1
-                                    && !dialog7End.activeSelf);
-        whiteLonelibet.GetComponent<Lonelibet>().Bark();
-        yield return new WaitForSeconds(0.3f);
-        whiteLonelibet.GetComponent<Lonelibet>().Bark();
-        yield return new WaitForSeconds(1.5f);
-        dialog8Start.SetActive(true);
-        yield return new WaitUntil(() => dialog8End.GetComponent<Dialog>().index > dialog8End.GetComponent<Dialog>().lines.Length - 1
-                                    && !dialog8End.activeSelf);
-        yield return StartCoroutine(scarletBoss.GetComponent<Scarlet_Attack>().A3());
-        yield return StartCoroutine(nelio.GetComponent<P_Dash>().Roll());
-        BlockNelio();
-        nelio.transform.localScale = new Vector3(-1, 1, 1);
-        yield return new WaitForSeconds(1f);
-        dialog9Start.SetActive(true);
-        yield return new WaitUntil(() => dialog9End.GetComponent<Dialog>().index > dialog9End.GetComponent<Dialog>().lines.Length - 1
-                                    && !dialog9End.activeSelf);
-        bossHPSystem.SetActive(true);
-
+        
 
     }
     IEnumerator PlayScene7()
     {
+        bgMusic.Play();
         nelio.transform.position = new Vector3(-6, -0.3f, 0);
         blackBg.gameObject.SetActive(true);
         hpSystem.SetActive(false);
@@ -181,13 +148,13 @@ public class S7 : MonoBehaviour
         yield return new WaitForSeconds(2f);
         yield return new WaitForSeconds(0.5f);
         portalSound.Play();
-        yield return new WaitForSeconds(0.75f);        
+        yield return new WaitForSeconds(0.75f);
         portal.SetActive(true);
         nelio.SetActive(true);
         nelio.GetComponent<SpriteRenderer>().enabled = false;
         yield return new WaitForSeconds(1.5f);
         nelio.GetComponent<Animator>().SetBool("isRun", true);
-        nelio.GetComponent<SpriteRenderer>().enabled = true;        
+        nelio.GetComponent<SpriteRenderer>().enabled = true;
         nelio.GetComponent<Rigidbody2D>().gravityScale = 0;
         nelio.GetComponent<Rigidbody2D>().linearVelocity = new Vector2(2f, 0);
         yield return new WaitUntil(() => nelio.transform.position.x >= -3f);
@@ -199,10 +166,10 @@ public class S7 : MonoBehaviour
         portalSound.Play();
         yield return new WaitForSeconds(0.75f);
         portal.SetActive(false);
-        yield return new WaitForSeconds(1f);        
+        yield return new WaitForSeconds(1f);
         nelio.GetComponent<P_Block>().isBlock = false;
         yield return new WaitUntil(() => nelio.transform.position.x >= 4f);
-        BlockNelio();                     
+        BlockNelio();
         yield return new WaitForSeconds(1f);
         dialog1Start.SetActive(true);
         yield return new WaitUntil(() => dialog1End.GetComponent<Dialog>().index > dialog1End.GetComponent<Dialog>().lines.Length - 1
@@ -211,7 +178,7 @@ public class S7 : MonoBehaviour
         nelio.GetComponent<SpriteRenderer>().enabled = true;
         nelio.GetComponent<Rigidbody2D>().gravityScale = 0;
         nelio.GetComponent<Rigidbody2D>().linearVelocity = new Vector2(2f, 0);
-        yield return new WaitUntil(() => nelio.transform.position.x >= 9.5f);    
+        yield return new WaitUntil(() => nelio.transform.position.x >= 9.5f);
         BlockNelio();
         scar_Sit.SetActive(false);
         scarlet.SetActive(true);
@@ -258,7 +225,7 @@ public class S7 : MonoBehaviour
         yield return new WaitForSeconds(0.75f);
         dialog4End.SetActive(true);
         yield return new WaitUntil(() => dialog4End.GetComponent<Dialog>().index > dialog4End.GetComponent<Dialog>().lines.Length - 1
-                                    && !dialog4End.activeSelf);        
+                                    && !dialog4End.activeSelf);
         whiteLonelibet.SetActive(true);
         whiteLonelibet.GetComponent<Rigidbody2D>().gravityScale = 0;
         whiteLonelibet.GetComponent<Animator>().SetBool("isRun", true);
@@ -272,7 +239,7 @@ public class S7 : MonoBehaviour
         yield return StartCoroutine(Cin1());
         whiteLonelibet.GetComponent<Animator>().SetBool("isRun", false);
         yield return new WaitForSeconds(0.5f);
-        whiteLonelibet.transform.localScale = new Vector3(-1, 1, 1);       
+        whiteLonelibet.transform.localScale = new Vector3(-1, 1, 1);
         scarlet.GetComponent<Scarlet_Attack>().BowAttack();
         yield return new WaitForSeconds(1f);
         whiteLonelibet.GetComponent<Animator>().SetTrigger("A1");
@@ -298,7 +265,7 @@ public class S7 : MonoBehaviour
         yield return new WaitForSeconds(2f);
         portalSound.Play();
         yield return new WaitForSeconds(0.75f);
-        portal2.SetActive(true);        
+        portal2.SetActive(true);
         yield return new WaitForSeconds(1f);
         nelio.transform.localScale = new Vector3(1, 1, 1);
         yield return new WaitForSeconds(1f);
@@ -324,6 +291,164 @@ public class S7 : MonoBehaviour
         portal2.SetActive(false);
         yield return StartCoroutine(BGFade());
         //
+        scarletBoss.transform.position = new Vector3(82, -2.75f, 0);
+        nelio.transform.position = new Vector3(81, -1.9f, 0);
+        cam2.SetActive(true);
+        cam1.SetActive(false);
+        yield return new WaitForSeconds(2f);
+        yield return StartCoroutine(BGApear());
+        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(0.5f);
+        portalSound.Play();
+        yield return new WaitForSeconds(0.75f);
+        portal3.SetActive(true);
+        nelio.SetActive(true);
+        nelio.GetComponent<SpriteRenderer>().enabled = false;
+        yield return new WaitForSeconds(1.5f);
+        nelio.GetComponent<Animator>().SetBool("isRun", true);
+        nelio.GetComponent<SpriteRenderer>().enabled = true;
+        nelio.GetComponent<Rigidbody2D>().gravityScale = 0;
+        nelio.GetComponent<Rigidbody2D>().linearVelocity = new Vector2(2f, 0);
+        yield return new WaitUntil(() => nelio.transform.position.x >= 86f);
+        BlockNelio();
+        scarletBoss.SetActive(true);
+        scarletBoss.GetComponent<Rigidbody2D>().gravityScale = 0;
+        scarletBoss.GetComponent<Rigidbody2D>().linearVelocity = new Vector2(2f, 0);
+        scarletBoss.GetComponent<Animator>().SetBool("isRun", true);
+        yield return new WaitUntil(() => scarletBoss.transform.position.x >= 85f);
+        scarletBoss.GetComponent<Rigidbody2D>().linearVelocity = Vector2.zero;
+        scarletBoss.GetComponent<Animator>().SetBool("isRun", false);
+        scarletBoss.GetComponent<Rigidbody2D>().gravityScale = 1;
+        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.5f);
+        portalSound.Play();
+        yield return new WaitForSeconds(0.75f);
+        portal3.SetActive(false);
+        yield return new WaitForSeconds(2f);
+        cam3.SetActive(true);
+        cam2.SetActive(false);
+        W5.SetActive(true);
+        hpSystem.SetActive(true);
+        yield return new WaitForSeconds(2f);
+        whiteLonelibet.GetComponent<Lonelibet>().Bark();
+        yield return new WaitForSeconds(0.3f);
+        whiteLonelibet.GetComponent<Lonelibet>().Bark();
+        yield return new WaitForSeconds(1.5f);
+        dialog7Start.SetActive(true);
+        yield return new WaitUntil(() => dialog7End.GetComponent<Dialog>().index > dialog7End.GetComponent<Dialog>().lines.Length - 1
+                                    && !dialog7End.activeSelf);
+        whiteLonelibet.GetComponent<Lonelibet>().Bark();
+        yield return new WaitForSeconds(0.3f);
+        whiteLonelibet.GetComponent<Lonelibet>().Bark();
+        yield return new WaitForSeconds(1.5f);
+        dialog8Start.SetActive(true);
+        yield return new WaitUntil(() => dialog8End.GetComponent<Dialog>().index > dialog8End.GetComponent<Dialog>().lines.Length - 1
+                                    && !dialog8End.activeSelf);
+        yield return new WaitForSeconds(0.5f);
+        StartCoroutine(scarletBoss.GetComponent<Scarlet_Attack>().A3());
+        yield return new WaitForSeconds(0.8f);
+        yield return StartCoroutine(nelio.GetComponent<P_Dash>().Roll());
+        BlockNelio();
+        nelio.transform.localScale = new Vector3(-1, 1, 1);
+        yield return new WaitForSeconds(1f);
+        dialog9Start.SetActive(true);
+        yield return new WaitUntil(() => dialog9End.GetComponent<Dialog>().index > dialog9End.GetComponent<Dialog>().lines.Length - 1
+                                    && !dialog9End.activeSelf);
+        bossHPSystem.SetActive(true);
+        UnblockNelio();
+        bgMusic.Stop();
+        bgMusic2.Play();
+        yield return new WaitForSeconds(1f);
+        scarletBoss.GetComponent<Scarlet_Attack>().isBattle = true;
+        yield return new WaitUntil(() => scarletBoss.GetComponent<EnemyLife>().isDead);        
+        bgMusic2.Stop();
+        yield return StartCoroutine(scarletBoss.GetComponent<Scarlet_Attack>().BacktoScarlet());
+        BlockNelio();
+        nelio.transform.localScale = new Vector3(scarletBoss.transform.position.x > nelio.transform.position.x ? 1 : -1, 1, 1);
+        yield return new WaitForSeconds(1f);
+        dialog10Start.SetActive(true);
+        yield return new WaitUntil(() => dialog10End.GetComponent<Dialog>().index > dialog10End.GetComponent<Dialog>().lines.Length - 1
+                                    && !dialog10End.activeSelf);
+        GameObject tG = Instantiate(teleGhost, scarletBoss.transform.position + new Vector3(0, 1, 0), Quaternion.Euler(0, 0, 0));
+        Destroy(tG, 4 / 6f);
+        yield return new WaitForSeconds(4 / 6f);
+        scarletBoss.SetActive(false);
+        whiteLonelibetBoss.SetActive(false);
+        bossHPSystem.SetActive(false);
+        yield return StartCoroutine(VicPanShow());
+        yield return new WaitForSeconds(1f);
+        gift.SetActive(true);
+        tutorialE2.SetActive(true);
+        yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.E));
+        yield return new WaitForSeconds(0.3f);
+        gift.SetActive(false);
+        tutorialE2.SetActive(false);
+        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.5f);
+        portalSound.Play();
+        yield return new WaitForSeconds(0.75f);
+        portal4.SetActive(true);
+        yield return new WaitForSeconds(2f);
+        cam2.SetActive(true);
+        cam3.SetActive(false);
+        yield return new WaitForSeconds(2f);
+        nelio.GetComponent<P_Block>().isBlock = false;
+        yield return new WaitUntil(() => nelio.transform.position.x >= 100f);
+        hpSystem.SetActive(false);
+        nelio.SetActive(false);
+        nelio.GetComponent<P_Block>().isBlock = true;
+        nelio.GetComponent<Rigidbody2D>().linearVelocity = Vector2.zero;
+        nelio.GetComponent<Animator>().SetBool("isRun", false);
+        yield return new WaitForSeconds(2f);
+        portalSound.Play();
+        yield return new WaitForSeconds(0.75f);
+        portal4.SetActive(false);
+        yield return StartCoroutine(NextScene8());
+    }
+
+    IEnumerator NextScene8()
+    {
+        blackBg.CrossFadeAlpha(0, 0.1f, false);
+        yield return new WaitForSeconds(0.5f);
+        blackBg.gameObject.SetActive(true);
+        blackBg.CrossFadeAlpha(1, 5f, false);
+        yield return new WaitForSeconds(6f);
+        SceneManager.LoadScene("S8");
+    }
+
+    IEnumerator VicPanShow()
+    {
+        yield return new WaitForSeconds(0.1f);
+        VicPan.CrossFadeAlpha(0f, 0.1f, false);
+        vicTitle.CrossFadeAlpha(0f, 0.1f, false);
+        yield return new WaitForSeconds(1f);
+        VicPan.gameObject.SetActive(true);
+        yield return new WaitForSeconds(1f);
+        victorySound.Play();
+        VicPan.CrossFadeAlpha(220 / 255f, 3f, false);
+        vicTitle.CrossFadeAlpha(1f, 3f, false);
+        yield return new WaitForSeconds(6f);
+        VicPan.CrossFadeAlpha(0f, 3f, false);
+        vicTitle.CrossFadeAlpha(0f, 3f, false);
+        yield return new WaitForSeconds(3f);
+        VicPan.gameObject.SetActive(false);
+    }
+
+    IEnumerator DeadPanShow()
+    {
+        yield return new WaitForSeconds(0.1f);
+        DeadPan.CrossFadeAlpha(0f, 0.1f, false);
+        deadTitle.CrossFadeAlpha(0f, 0.1f, false);
+        deadTitle2.CrossFadeAlpha(0f, 0.1f, false);
+        yield return new WaitForSeconds(1f);
+        DeadPan.gameObject.SetActive(true);
+        yield return new WaitForSeconds(1f);
+        deadSound.Play();
+        DeadPan.CrossFadeAlpha(220 / 255f, 3f, false);
+        deadTitle.CrossFadeAlpha(1f, 3f, false);
+        yield return new WaitForSeconds(6f);
+        deadTitle2.CrossFadeAlpha(1f, 3f, false);
+        yield return new WaitForSeconds(3f);
     }
 
     IEnumerator BGFade()
@@ -358,7 +483,7 @@ public class S7 : MonoBehaviour
         whiteLonelibet.GetComponent<Rigidbody2D>().gravityScale = 1;
         //StartCoroutine(nelio.GetComponent<P_Dash>().Dash());
         yield return StartCoroutine(nelio.GetComponent<P_Dash>().Roll());
-        
+
     }
 
     IEnumerator Cinematic()
@@ -400,11 +525,20 @@ public class S7 : MonoBehaviour
     }
 
     IEnumerator NelioBlock1()
-    {        
-        yield return new WaitUntil(() => nelio.transform.position.x >= 55.5f);        
+    {
+        yield return new WaitForSeconds(5f);
+        yield return new WaitUntil(() => nelio.transform.position.x >= 55.5f);
         nelio.GetComponent<P_Block>().isBlock = true;
         nelio.GetComponent<Rigidbody2D>().linearVelocity = Vector2.zero;
         nelio.GetComponent<Animator>().SetBool("isRun", false);
+    }
+
+    IEnumerator NelioDead()
+    {
+        yield return new WaitUntil(() => nelio.GetComponent<P_Life>().isDead);
+        yield return StartCoroutine(DeadPanShow());
+        yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.R));
+        SceneManager.LoadScene("S7");
     }
 
     void BlockNelio()
@@ -413,8 +547,8 @@ public class S7 : MonoBehaviour
         nelio.GetComponent<Rigidbody2D>().linearVelocity = Vector2.zero;
         nelio.GetComponent<Rigidbody2D>().gravityScale = 1;
         nelio.GetComponent<Animator>().SetBool("isRun", false);
-    }  
-    
+    }
+
     void UnblockNelio()
     {
         nelio.GetComponent<P_Block>().isBlock = false;

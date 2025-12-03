@@ -29,6 +29,7 @@ public class P_Hurt : MonoBehaviour
         rb.linearVelocity = Vector2.zero;
         yield return new WaitForSeconds(0.5f);
         GetComponent<P_Block>().isBlock = false;
+        yield return new WaitForSeconds(0.7f);
         GetComponent<P_Dash>().isImmute = false;
 
     }

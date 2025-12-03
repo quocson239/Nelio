@@ -9,6 +9,7 @@ public class Lonelibet : MonoBehaviour
 
     [Header("Audio")]
     [SerializeField] AudioSource barkingSound;
+    [SerializeField] AudioSource attackSound;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -25,6 +26,7 @@ public class Lonelibet : MonoBehaviour
     public IEnumerator A1()
     {
         animator.SetTrigger("A1");
+        attackSound.Play();
         yield return new WaitForSeconds(4/6f);
         HitA1();
         rb.linearVelocity = new Vector2(-transform.localScale.x * 3, 0);
