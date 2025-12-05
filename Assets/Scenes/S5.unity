@@ -14024,6 +14024,7 @@ MonoBehaviour:
     luy\u1EC7n t\u1EADp v\xE0 ch\u1EDD \u0111\u1EE3i c\xE1nh c\u1ED5ng xu\u1EA5t
     hi\u1EC7n..."
   textSpeed: 0.1
+  isStop: 0
   index: 0
 --- !u!114 &110161804
 MonoBehaviour:
@@ -14777,8 +14778,15 @@ MonoBehaviour:
   hitboxA1: {fileID: 0}
   hitboxA2: {fileID: 0}
   hitboxA3: {fileID: 0}
-  nelio: {fileID: 0}
+  nelio: {fileID: 276718491}
+  willon: {fileID: 0}
+  jumpForce: 0
+  jumpRange: 0
+  isBattle: 0
   BowSound: {fileID: 1795158164}
+  SlashSound: {fileID: 0}
+  HitGroundSound: {fileID: 0}
+  WhistleSound: {fileID: 0}
 --- !u!1 &241902583
 GameObject:
   m_ObjectHideFlags: 0
@@ -20215,6 +20223,7 @@ MonoBehaviour:
   - "\u0110\u01B0\u1EE3c r\u1ED3i \u0111\u1EBFn l\xFAc tr\u1EA3 Milo l\u1EA1i cho
     tao."
   textSpeed: 0.08
+  isStop: 0
   index: 0
 --- !u!114 &669712365
 MonoBehaviour:
@@ -25612,6 +25621,7 @@ MonoBehaviour:
   - "Kh\xF4ng ngh\u0129 nhi\u1EC1u n\u1EEFa, b\u1EAFt \u0111\u1EA7u luy\u1EC7n t\u1EADp
     cho ng\xE0y m\u1EDBi th\xF4i n\xE0o."
   textSpeed: 0.08
+  isStop: 0
   index: 0
 --- !u!114 &855902504
 MonoBehaviour:
@@ -48795,7 +48805,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: b9257dc3bb6c9b44dbf77ee9e9297ba1, type: 3}
+  m_Resource: {fileID: 8300000, guid: fc98ecb7eaaf80e4a9872e17a76d29f7, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.7
   m_Pitch: 1

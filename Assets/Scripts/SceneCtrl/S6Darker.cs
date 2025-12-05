@@ -59,6 +59,7 @@ public class S6Darker : MonoBehaviour
     [SerializeField] AudioSource darkerTeleSound;
     [SerializeField] AudioSource victorySound;
     [SerializeField] AudioSource deadSound;
+    [SerializeField] AudioSource giftSound;
     void Start()
     {
         StartCoroutine(NelioDead());
@@ -198,6 +199,7 @@ public class S6Darker : MonoBehaviour
         bossHpSystem.SetActive(false);
         yield return StartCoroutine(VicPanShow());
         yield return new WaitForSeconds(1f);
+        giftSound.Play();
         gift.SetActive(true);
         tutorialE.SetActive(true);
         yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.E));

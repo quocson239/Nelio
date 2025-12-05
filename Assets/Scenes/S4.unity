@@ -14480,6 +14480,7 @@ MonoBehaviour:
   lines:
   - "S\xE1ng h\xF4m sau..."
   textSpeed: 0.1
+  isStop: 0
   index: 0
 --- !u!114 &110161804
 MonoBehaviour:
@@ -15402,6 +15403,7 @@ MonoBehaviour:
   - "R\u1ED3i nh\u1EA5t \u0111\u1ECBnh b\u1EA1n s\u1EBD c\u1EE9u \u0111\u01B0\u1EE3c
     em c\u1EE7a m\xECnh."
   textSpeed: 0.08
+  isStop: 0
   index: 0
 --- !u!114 &217437361
 MonoBehaviour:
@@ -15608,6 +15610,7 @@ MonoBehaviour:
     \u0111\u1EA5y!"
   - "Nh\xECn k\xECa tr\u0103ng \u0111\xEAm nay th\u1EADt \u0111\u1EB9p!"
   textSpeed: 0.08
+  isStop: 0
   index: 0
 --- !u!114 &229221970
 MonoBehaviour:
@@ -15805,8 +15808,15 @@ MonoBehaviour:
   hitboxA1: {fileID: 0}
   hitboxA2: {fileID: 0}
   hitboxA3: {fileID: 0}
-  nelio: {fileID: 0}
+  nelio: {fileID: 276718491}
+  willon: {fileID: 0}
+  jumpForce: 0
+  jumpRange: 0
+  isBattle: 0
   BowSound: {fileID: 1795158164}
+  SlashSound: {fileID: 0}
+  HitGroundSound: {fileID: 0}
+  WhistleSound: {fileID: 0}
 --- !u!1 &241902583
 GameObject:
   m_ObjectHideFlags: 0
@@ -16666,6 +16676,7 @@ MonoBehaviour:
   lines:
   - "B\u1EA1n c\xF3 sao kh\xF4ng ?"
   textSpeed: 0.08
+  isStop: 0
   index: 0
 --- !u!114 &287224297
 MonoBehaviour:
@@ -22409,6 +22420,7 @@ MonoBehaviour:
   - "M\xECnh kh\xF4ng sao! C\u1EA3m \u01A1n b\u1EA1n r\u1EA5t nhi\u1EC1u!"
   - "Th\u1EADt nguy hi\u1EC3m! May m\u1EAFn l\xE0 c\xF3 b\u1EA1n \u1EDF \u0111\xE2y! "
   textSpeed: 0.08
+  isStop: 0
   index: 0
 --- !u!114 &621620179
 MonoBehaviour:
@@ -23086,6 +23098,7 @@ MonoBehaviour:
   - "M\xE0 b\u1EA1n t\u1EEB \u0111\xE2u \u0111\u1EBFn \u0111\xE2y v\xE0o l\xFAc tr\u1EDDi
     t\u1ED1i th\u1EBF n\xE0y!"
   textSpeed: 0.08
+  isStop: 0
   index: 0
 --- !u!114 &654914713
 MonoBehaviour:
@@ -23334,6 +23347,7 @@ MonoBehaviour:
   - "C\u01A1 m\xE0 m\xECnh ch\u1EAFc ch\u1EAFn s\u1EBD d\u1EAFt Milo \u0111\u1EBFn
     nh\xE0 b\u1EA1n sau khi ra kh\u1ECFi c\xE1nh c\u1ED5ng \u0111\xF3."
   textSpeed: 0.08
+  isStop: 0
   index: 0
 --- !u!114 &669712365
 MonoBehaviour:
@@ -24200,6 +24214,7 @@ MonoBehaviour:
   - ...
   - "\u0110\xEAm nay th\u1EADt y\xEAn t\u0129nh..."
   textSpeed: 0.08
+  isStop: 0
   index: 0
 --- !u!114 &719111310
 MonoBehaviour:
@@ -24552,6 +24567,7 @@ MonoBehaviour:
   - "M\xECnh s\u1EBD \u0111\xE3i c\u1EA3 hai m\u1ED9t b\u1EEFa th\u1EADt ngon \u0111\u1EC3
     c\u1EA3m \u01A1n."
   textSpeed: 0.08
+  isStop: 0
   index: 0
 --- !u!114 &721969585
 MonoBehaviour:
@@ -29315,6 +29331,7 @@ MonoBehaviour:
   - "B\u1EA1n c\u0169ng th\u1EBF, t\xF4i ngh\u0129 s\xE1ng mai b\u1EA1n s\u1EBD t\xECm
     th\u1EA5y \u0111\u01B0\u1EDDng v\u1EC1 nh\xE0 th\xF4i."
   textSpeed: 0.08
+  isStop: 0
   index: 0
 --- !u!114 &855902504
 MonoBehaviour:
@@ -37479,6 +37496,7 @@ MonoBehaviour:
     s\xE1ng."
   - "Th\u1EADt k\xEC di\u1EC7u!"
   textSpeed: 0.08
+  isStop: 0
   index: 0
 --- !u!114 &967548057
 MonoBehaviour:
@@ -43058,6 +43076,7 @@ MonoBehaviour:
   - "\u0110\u1EE3i \u0111\u1EBFn ng\xE0y mai, khi tr\u1EDDi s\xE1ng th\xEC t\xECm
     \u0111\u01B0\u1EDDng v\u1EC1 s\u1EBD d\u1EC5 h\u01A1n."
   textSpeed: 0.08
+  isStop: 0
   index: 0
 --- !u!114 &1376487851
 MonoBehaviour:
@@ -53288,6 +53307,7 @@ MonoBehaviour:
   - "N\u1EBFu \u0111\u01B0\u1EE3c v\u1EADy th\xEC t\u1ED1t qu\xE1! C\u1EA3m \u01A1n
     b\u1EA1n!"
   textSpeed: 0.08
+  isStop: 0
   index: 0
 --- !u!114 &1524467662
 MonoBehaviour:
@@ -55602,7 +55622,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 8289b1b468ffc42428ffea4657c3dc50, type: 3}
+  m_Resource: {fileID: 8300000, guid: 785c45ab499ac6c439d1848674f7b6ad, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.7
   m_Pitch: 1
@@ -55746,6 +55766,7 @@ MonoBehaviour:
   lines:
   - "Ti\u1EBFng h\xE9t h\xECnh nh\u01B0 ph\xE1t ra t\u1EEB ph\xEDa h\u1ED3 n\u01B0\u1EDBc."
   textSpeed: 0.08
+  isStop: 0
   index: 0
 --- !u!114 &1595303118
 MonoBehaviour:
@@ -77593,6 +77614,7 @@ MonoBehaviour:
     tr\u1ED1n cho t\u1EDBi khi v\u1EA5p t\xE9 \u1EDF ch\u1ED7 n\xE0y.."
   - "V\xE0 r\u1ED3i b\u1EA1n xu\u1EA5t hi\u1EC7n..."
   textSpeed: 0.08
+  isStop: 0
   index: 0
 --- !u!114 &2037438006
 MonoBehaviour:
@@ -77921,10 +77943,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aece97a348264ff42ad3d2489385f3eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hpSystem: {fileID: 0}
-  hpBar: {fileID: 0}
-  hp: 2
-  isDead: 0
 --- !u!1 &2059162679
 GameObject:
   m_ObjectHideFlags: 0

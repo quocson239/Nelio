@@ -933,6 +933,7 @@ MonoBehaviour:
   - "S\u1EBD r\u1EA5t nguy hi\u1EC3m nh\u01B0ng n\xF3 l\xE0 c\xE1ch duy nh\u1EA5t
     \u0111\u1EC3 c\u1EE9u em c\u1EE7a nh\xF3c."
   textSpeed: 0.08
+  isStop: 0
   index: 0
 --- !u!114 &41693587
 MonoBehaviour:
@@ -1193,6 +1194,7 @@ MonoBehaviour:
   lines:
   - "Ti\u1EBFp t\u1EE5c t\u1EADp luy\u1EC7n n\xE0o nh\xF3c!"
   textSpeed: 0.08
+  isStop: 0
   index: 0
 --- !u!114 &67604253
 MonoBehaviour:
@@ -14426,6 +14428,7 @@ MonoBehaviour:
   lines:
   - "Sau v\xE0i ng\xE0y t\u1EADp luy\u1EC7n ch\u0103m ch\u1EC9..."
   textSpeed: 0.1
+  isStop: 0
   index: 0
 --- !u!114 &110161804
 MonoBehaviour:
@@ -16221,7 +16224,14 @@ MonoBehaviour:
   hitboxA2: {fileID: 0}
   hitboxA3: {fileID: 0}
   nelio: {fileID: 0}
+  willon: {fileID: 0}
+  jumpForce: 0
+  jumpRange: 0
+  isBattle: 0
   BowSound: {fileID: 1795158164}
+  SlashSound: {fileID: 0}
+  HitGroundSound: {fileID: 0}
+  WhistleSound: {fileID: 0}
 --- !u!1001 &257380618
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16760,6 +16770,7 @@ MonoBehaviour:
   - "C\xF3 c\xE1ch n\xE0o \u0111\u1EC3 c\u1EE9u nh\u1EEFng ng\u01B0\u1EDDi b\u1ECB
     h\xFAt v\xE0o \u0111\xF3 kh\xF4ng ?"
   textSpeed: 0.08
+  isStop: 0
   index: 0
 --- !u!114 &287224297
 MonoBehaviour:
@@ -20208,6 +20219,7 @@ MonoBehaviour:
     \u0111\u1EA5y!"
   - "T\u1EA1m bi\u1EC7t \xF4ng Pan!"
   textSpeed: 0.08
+  isStop: 0
   index: 0
 --- !u!114 &479948992
 MonoBehaviour:
@@ -20382,6 +20394,7 @@ MonoBehaviour:
   - "N\xE0y nh\xF3c, \u0111\u1EEBng \u0111\u1EE9ng th\u1EABn th\u1EDD \u1EDF \u0111\xF3
     n\u1EEFa."
   textSpeed: 0.08
+  isStop: 0
   index: 0
 --- !u!114 &483672164
 MonoBehaviour:
@@ -22112,6 +22125,7 @@ MonoBehaviour:
   - "Nh\u1EA5t \u0111\u1ECBnh ch\xE1u s\u1EBD c\u1EE9u \u0111\u01B0\u1EE3c Milo v\xE0
     d\u1EABn n\xF3 \u0111\u1EBFn t\xECm \xF4ng \u0111\u1EC3 c\u1EA3m \u01A1n."
   textSpeed: 0.08
+  isStop: 0
   index: 0
 --- !u!114 &615930299
 MonoBehaviour:
@@ -22339,6 +22353,7 @@ MonoBehaviour:
   - "M\xECnh th\u1EADt v\xF4 d\u1EE5ng! Kh\xF4ng th\u1EC3 l\xE0m g\xEC \u0111\u1EC3
     c\u1EE9u Milo!"
   textSpeed: 0.08
+  isStop: 0
   index: 0
 --- !u!114 &621620179
 MonoBehaviour:
@@ -22570,6 +22585,7 @@ MonoBehaviour:
   lines:
   - "M\u1ED9t l\u1ECD \u0111om \u0111\xF3m ?"
   textSpeed: 0.08
+  isStop: 0
   index: 0
 --- !u!114 &634128722
 MonoBehaviour:
@@ -23154,6 +23170,7 @@ MonoBehaviour:
   lines:
   - "N\xF3 th\u1EADt s\u1EF1 \u0111\xE1ng s\u1EE3 v\u1EADy sao !?"
   textSpeed: 0.08
+  isStop: 0
   index: 0
 --- !u!114 &654914713
 MonoBehaviour:
@@ -23811,6 +23828,7 @@ MonoBehaviour:
     nh\xF3c!"
   - "Ta ph\u1EA3i \u0111i r\u1ED3i, b\u1EA3o tr\u1ECDng nh\xE9"
   textSpeed: 0.08
+  isStop: 0
   index: 0
 --- !u!114 &687058906
 MonoBehaviour:
@@ -24450,6 +24468,7 @@ MonoBehaviour:
   - "\xD4ng l\xE0 ai ??? T\u1EA1i sao \xF4ng l\u1EA1i bi\u1EBFt chuy\u1EC7n em c\u1EE7a
     t\xF4i ???"
   textSpeed: 0.08
+  isStop: 0
   index: 0
 --- !u!114 &719111310
 MonoBehaviour:
@@ -28615,6 +28634,7 @@ MonoBehaviour:
   - "\u0110\u1EE9ng \u0111\xF3 m\xE3i kh\xF4ng c\u1EE9u \u0111\u01B0\u1EE3c em nh\xF3c
     \u0111\xE2u."
   textSpeed: 0.08
+  isStop: 0
   index: 0
 --- !u!114 &803000219
 MonoBehaviour:
@@ -29295,6 +29315,7 @@ MonoBehaviour:
   lines:
   - "Kh\xF4ng bi\u1EBFt gi\u1EDD n\xE0y Milo ra sao r\u1ED3i!"
   textSpeed: 0.08
+  isStop: 0
   index: 0
 --- !u!114 &855902504
 MonoBehaviour:
@@ -38026,6 +38047,7 @@ MonoBehaviour:
   lines:
   - "Ai \u0111\u1EA5y ??? "
   textSpeed: 0.08
+  isStop: 0
   index: 0
 --- !u!114 &967548057
 MonoBehaviour:
@@ -39932,6 +39954,7 @@ MonoBehaviour:
   - "N\xF3i hay \u0111\u1EA5y nh\xF3c! Th\u1EBF t\u1EEB ng\xE0y mai ta s\u1EBD b\u1EAFt
     \u0111\u1EA7u luy\u1EC7n t\u1EADp."
   textSpeed: 0.08
+  isStop: 0
   index: 0
 --- !u!114 &1098698951
 MonoBehaviour:
@@ -40029,6 +40052,7 @@ MonoBehaviour:
   lines:
   - Haizzzz.......!
   textSpeed: 0.08
+  isStop: 0
   index: 0
 --- !u!114 &1127688330
 MonoBehaviour:
@@ -41403,7 +41427,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 83aa78c909f82f7469023b740baea25d, type: 3}
+  m_Resource: {fileID: 8300000, guid: cd16aee85958eb349a48ea3a68904fd9, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.5
   m_Pitch: 1
@@ -42588,6 +42612,7 @@ MonoBehaviour:
   lines:
   - "Milooooo..................!   Em c\xF3 nghe anh hai g\u1ECDi kh\xF4ng...!"
   textSpeed: 0.08
+  isStop: 0
   index: 0
 --- !u!114 &1349878678
 MonoBehaviour:
@@ -42994,6 +43019,7 @@ MonoBehaviour:
   - "\xD4ng Pan, \xF4ng c\xF3 th\u1EC3 d\u1EA1y cho t\xF4i k\u1EF9 n\u0103ng chi\u1EBFn
     \u0111\u1EA5u \u0111\u01B0\u1EE3c kh\xF4ng ?"
   textSpeed: 0.08
+  isStop: 0
   index: 0
 --- !u!114 &1376487851
 MonoBehaviour:
@@ -43988,6 +44014,7 @@ MonoBehaviour:
     s\u1EBD x\u1EA3y ra."
   - "C\u1ED1 l\xEAn nh\xE9!"
   textSpeed: 0.08
+  isStop: 0
   index: 0
 --- !u!114 &1464270126
 MonoBehaviour:
@@ -54490,6 +54517,7 @@ MonoBehaviour:
   - "Hi v\u1ECDng khi c\xE1nh c\u1ED5ng m\u1EDF l\u1EA1i, nh\xF3c s\u1EBD c\u1EE9u
     \u0111\u01B0\u1EE3c em c\u1EE7a m\xECnh."
   textSpeed: 0.08
+  isStop: 0
   index: 0
 --- !u!114 &1565207182
 MonoBehaviour:
@@ -56420,7 +56448,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 3cee3fa8424176f40a4274f086fe6115, type: 3}
+  m_Resource: {fileID: 8300000, guid: 67e9f0b6268cfae4b9406df7084543ac, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.5
   m_Pitch: 1
@@ -56565,6 +56593,7 @@ MonoBehaviour:
   - "C\xF3 ph\u1EA3i \xF4ng bi\u1EBFt v\u1EC1 c\xE1nh c\u1ED5ng \u0111\xF3 ? Xin
     h\xE3y n\xF3i cho t\xF4i bi\u1EBFt \u0111i..."
   textSpeed: 0.08
+  isStop: 0
   index: 0
 --- !u!114 &1595303118
 MonoBehaviour:
@@ -56728,6 +56757,7 @@ MonoBehaviour:
   - "Kh\xF4ng d\u1EC5 d\xE0ng nh\u01B0 vi\u1EC7c vui \u0111\xF9a ch\u1EA1y nh\u1EA3y
     \u0111\xE2u \u0111\u1EA5y nh\xF3c."
   textSpeed: 0.08
+  isStop: 0
   index: 0
 --- !u!114 &1629175416
 MonoBehaviour:
@@ -57104,6 +57134,7 @@ MonoBehaviour:
   - "Em c\u1EE7a nh\xF3c kh\xF4ng ph\u1EA3i l\xE0 ng\u01B0\u1EDDi duy nh\u1EA5t b\u1ECB
     h\xFAt v\xE0o \u0111\xF3."
   textSpeed: 0.08
+  isStop: 0
   index: 0
 --- !u!114 &1641424513
 MonoBehaviour:
@@ -57610,6 +57641,7 @@ MonoBehaviour:
   lines:
   - "\u0110\xEAm t\u1EDBi..."
   textSpeed: 0.1
+  isStop: 0
   index: 0
 --- !u!114 &1674994437
 MonoBehaviour:
@@ -58136,6 +58168,7 @@ MonoBehaviour:
   - "H\xE3y gi\u1EEF g\xECn th\u1EADt k\u1EF9 nh\xE9 v\xEC ta ch\u1EC9 c\xF3 m\u1ED9t
     l\u1ECD th\xF4i \u0111\u1EA5y."
   textSpeed: 0.08
+  isStop: 0
   index: 0
 --- !u!114 &1701108616
 MonoBehaviour:
@@ -58389,6 +58422,7 @@ MonoBehaviour:
   - "D\u1EA1 v\xE2ng th\u01B0a \xF4ng Pan! Ch\xE1u s\u1EBD luy\u1EC7n t\u1EADp th\u1EADt
     nhi\u1EC1u!"
   textSpeed: 0.08
+  isStop: 0
   index: 0
 --- !u!114 &1716575909
 MonoBehaviour:
@@ -72969,6 +73003,7 @@ MonoBehaviour:
   - "\xD4ng Pan, c\u1EA3m \u01A1n \xF4ng r\u1EA5t nhi\u1EC1u! Ch\xE1u kh\xF4ng bi\u1EBFt
     ph\u1EA3i l\xE0m g\xEC \u0111\u1EC3 tr\u1EA3 \u01A1n \xF4ng."
   textSpeed: 0.08
+  isStop: 0
   index: 0
 --- !u!114 &1793406090
 MonoBehaviour:
@@ -73447,6 +73482,7 @@ MonoBehaviour:
     \u0111\u01B0\u1EDDng \u0111i ngang qua."
   - "\u0110\xFAng r\u1ED3i ta cho nh\xF3c th\u1EE9 n\xE0y..."
   textSpeed: 0.08
+  isStop: 0
   index: 0
 --- !u!114 &1821970285
 MonoBehaviour:
@@ -80290,6 +80326,7 @@ MonoBehaviour:
   - "Nh\u01B0ng t\u1EDBi nay v\u1EABn ch\u01B0a th\u1EA5y quay l\u1EA1i, c\xF3 v\u1EBB
     l\xE0nh \xEDt d\u1EEF nhi\u1EC1u."
   textSpeed: 0.08
+  isStop: 0
   index: 0
 --- !u!114 &2105449047
 MonoBehaviour:
@@ -80450,6 +80487,7 @@ MonoBehaviour:
   - "T\xF4i ch\u1EA5p nh\u1EADn m\u1ECDi th\u1EED th\xE1ch \u0111\u1EC3 c\xF3 th\u1EC3
     c\u1EE9u \u0111\u01B0\u1EE3c Milo."
   textSpeed: 0.08
+  isStop: 0
   index: 0
 --- !u!114 &2132499012
 MonoBehaviour:

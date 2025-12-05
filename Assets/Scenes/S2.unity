@@ -13812,6 +13812,7 @@ MonoBehaviour:
   lines:
   - "Nh\u1EEFng ng\xE0y sau..."
   textSpeed: 0.1
+  isStop: 0
   index: 0
 --- !u!114 &110161804
 MonoBehaviour:
@@ -17915,6 +17916,7 @@ MonoBehaviour:
   lines:
   - "Hihi.. ch\u1EC9 c\xF3 anh hai hi\u1EC3u em.."
   textSpeed: 0.08
+  isStop: 0
   index: 0
 --- !u!114 &368172013
 MonoBehaviour:
@@ -18942,6 +18944,7 @@ MonoBehaviour:
   lines:
   - "Em mu\u1ED1n \u0103n \u0111\xFAng kh\xF4ng ?"
   textSpeed: 0.08
+  isStop: 0
   index: 0
 --- !u!114 &483672164
 MonoBehaviour:
@@ -20043,6 +20046,7 @@ MonoBehaviour:
   - "\u0110\u01B0\u1EE3c r\u1ED3i, \u1EDF d\u01B0\u1EDBi \u0111\xE2y \u0111\u1EE3i
     anh hai m\u1ED9t l\xE1t nh\xE9..."
   textSpeed: 0.08
+  isStop: 0
   index: 0
 --- !u!114 &621620179
 MonoBehaviour:
@@ -32301,6 +32305,7 @@ MonoBehaviour:
   lines:
   - "Nh\u1EEFng tr\xE1i t\xE1o tr\xEAn kia nh\xECn ngon qu\xE1 anh hai..."
   textSpeed: 0.08
+  isStop: 0
   index: 0
 --- !u!114 &967548057
 MonoBehaviour:
@@ -34265,6 +34270,7 @@ MonoBehaviour:
   lines:
   - Yeahhh....
   textSpeed: 0.08
+  isStop: 0
   index: 0
 --- !u!114 &1110513364
 MonoBehaviour:
@@ -35554,7 +35560,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 28d5cc52cc56e804691daecb8511ace3, type: 3}
+  m_Resource: {fileID: 8300000, guid: 101a8014299c46e498ca9ffff1d0393e, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -47742,7 +47748,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 606f13b19caabd140b3a11636fedd042, type: 3}
+  m_Resource: {fileID: 8300000, guid: b2698df3c5780b5428869c851cf31df5, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.5
   m_Pitch: 1
@@ -63214,6 +63220,7 @@ MonoBehaviour:
   lines:
   - "Kh\xF4ng... Kh\xF4ng... Miloooooo....."
   textSpeed: 0.08
+  isStop: 0
   index: 0
 --- !u!114 &1873010136
 MonoBehaviour:

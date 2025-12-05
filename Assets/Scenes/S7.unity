@@ -47241,6 +47241,7 @@ MonoBehaviour:
   hitSound: {fileID: 2123486393}
   victorySound: {fileID: 750692081}
   deadSound: {fileID: 513276340}
+  giftSound: {fileID: 149799607}
 --- !u!114 &1167247601
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53703,7 +53704,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1509087515}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aece97a348264ff42ad3d2489385f3eb, type: 3}
+  m_Script: {fileID: 11500000, guid: 2b85d415474c689418664b883b1be78c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   hpSystem: {fileID: 1157966903}

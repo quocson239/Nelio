@@ -15092,6 +15092,7 @@ MonoBehaviour:
   darkerTeleSound: {fileID: 36402072}
   victorySound: {fileID: 852627569}
   deadSound: {fileID: 2074700591}
+  giftSound: {fileID: 1050855642}
 --- !u!1 &1065912178 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1095691683654943786, guid: 64269e86b3cf5064798ea12795ef7fbd, type: 3}
@@ -39518,7 +39519,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1930076376}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aece97a348264ff42ad3d2489385f3eb, type: 3}
+  m_Script: {fileID: 11500000, guid: 2b85d415474c689418664b883b1be78c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   hpSystem: {fileID: 1221330970}

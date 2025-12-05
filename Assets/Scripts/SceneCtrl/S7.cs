@@ -96,6 +96,7 @@ public class S7 : MonoBehaviour
     [SerializeField] AudioSource hitSound;
     [SerializeField] AudioSource victorySound;
     [SerializeField] AudioSource deadSound;
+    [SerializeField] AudioSource giftSound;
     void Start()
     {
         StartCoroutine(NelioBlock1());
@@ -377,6 +378,7 @@ public class S7 : MonoBehaviour
         bossHPSystem.SetActive(false);
         yield return StartCoroutine(VicPanShow());
         yield return new WaitForSeconds(1f);
+        giftSound.Play();
         gift.SetActive(true);
         tutorialE2.SetActive(true);
         yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.E));
@@ -413,7 +415,7 @@ public class S7 : MonoBehaviour
         blackBg.gameObject.SetActive(true);
         blackBg.CrossFadeAlpha(1, 5f, false);
         yield return new WaitForSeconds(6f);
-        SceneManager.LoadScene("S8");
+        SceneManager.LoadScene("S8Losmind");
     }
 
     IEnumerator VicPanShow()

@@ -2709,6 +2709,7 @@ MonoBehaviour:
   - "Anh hai... anh hai... d\u1EADy \u0111i... d\u1EADy \u0111i ch\u01A1i v\u1EDBi
     em \u0111i..."
   textSpeed: 0.08
+  isStop: 0
   index: 0
 --- !u!114 &532099667
 MonoBehaviour:
@@ -4504,6 +4505,7 @@ MonoBehaviour:
   - "\u0110i m\xE0 anh hai.. \u0111i ch\u01A1i v\u1EDBi em m\u1ED9t h\xF4m n\u1EEFa
     th\xF4i!"
   textSpeed: 0.08
+  isStop: 0
   index: 0
 --- !u!114 &1207016646
 MonoBehaviour:
@@ -4737,6 +4739,7 @@ MonoBehaviour:
   lines:
   - Yeahhh....
   textSpeed: 0.08
+  isStop: 0
   index: 0
 --- !u!114 &1283961399
 MonoBehaviour:
@@ -5488,6 +5491,7 @@ MonoBehaviour:
   - "L\xE0m bi\u1EBFng gh\xEA.. \u0110\u01B0\u1EE3c r\u1ED3i \u0111i th\xF4i n\xE0o
     Milo!"
   textSpeed: 0.08
+  isStop: 0
   index: 0
 --- !u!114 &1474441082
 MonoBehaviour:
@@ -8818,7 +8822,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: c20c54709234bbb408cbd8b9a11ef38c, type: 3}
+  m_Resource: {fileID: 8300000, guid: 2b9ca671cb789a44dbebbf7db3511ca2, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.309
   m_Pitch: 1
@@ -9099,6 +9103,7 @@ MonoBehaviour:
   - "Th\xF4i n\xE0o Milo! C\xF2n qu\xE1 s\u1EDBm! \u0110\u1EC3 anh ng\u1EE7 th\xEAm
     m\u1ED9t t\xED n\u1EEFa \u0111i...!"
   textSpeed: 0.08
+  isStop: 0
   index: 0
 --- !u!114 &1883188486
 MonoBehaviour:

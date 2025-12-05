@@ -6,7 +6,7 @@ public class P_Hurt : MonoBehaviour
     Rigidbody2D rb;
     Animator animator;
 
-    [SerializeField] AudioSource takedameSound;
+    public AudioSource takedameSound;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();

@@ -8,6 +8,7 @@ public class Dialog : MonoBehaviour
     public string[] lines;
     public float textSpeed;
 
+    public bool isStop;
     public int index;
     void Start()
     {
@@ -17,7 +18,7 @@ public class Dialog : MonoBehaviour
     
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && !isStop)
         {
             if (textComponent.text == lines[index])
             {
