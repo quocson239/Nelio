@@ -3048,6 +3048,7 @@ MonoBehaviour:
   - "K\u1EBB n\xE0o l\xE0m phi\u1EC1n \u0111\u1EBFn gi\u1EA5c ng\u1EE7 c\u1EE7a ta."
   - "Ng\u01B0\u01A1i th\u1EADt s\u1EF1 kh\xF4ng mu\u1ED1n s\u1ED1ng n\u1EEFa sao."
   textSpeed: 0.08
+  isStop: 0
   index: 0
 --- !u!114 &69723935
 MonoBehaviour:
@@ -4296,6 +4297,7 @@ MonoBehaviour:
   lines:
   - "Kh\xF4ng kh\xED trong \u0111\xE2y th\u1EADt u t\u1ED1i v\xE0 \u0111\xE1ng s\u1EE3."
   textSpeed: 0.08
+  isStop: 0
   index: 0
 --- !u!114 &208918143
 MonoBehaviour:
@@ -8970,6 +8972,7 @@ MonoBehaviour:
     qu\xE1!"
   - "Th\u1EADt may l\xE0 c\xF3 l\u1ECD h\u1EA1t s\xE1ng c\u1EE7a \xF4ng Pan"
   textSpeed: 0.08
+  isStop: 0
   index: 0
 --- !u!114 &792746089
 MonoBehaviour:
@@ -15005,6 +15008,7 @@ GameObject:
   - component: {fileID: 1062822046}
   - component: {fileID: 1062822045}
   - component: {fileID: 1062822047}
+  - component: {fileID: 1062822048}
   m_Layer: 0
   m_Name: SceneCtrl
   m_TagString: Untagged
@@ -15093,6 +15097,18 @@ MonoBehaviour:
   victorySound: {fileID: 852627569}
   deadSound: {fileID: 2074700591}
   giftSound: {fileID: 1050855642}
+--- !u!114 &1062822048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1062822044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fae083fc46ae8bc4f871227ed05a76d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1065912178 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1095691683654943786, guid: 64269e86b3cf5064798ea12795ef7fbd, type: 3}
@@ -15699,6 +15715,7 @@ MonoBehaviour:
   - "V\xE0 ng\u01B0\u01A1i c\u0169ng s\u1EBD nh\u01B0 th\u1EBF!"
   - "N\u1ED7i s\u1EE3 s\u1EBD nu\u1ED1t ch\u1EEDng ng\u01B0\u01A1i!!!"
   textSpeed: 0.08
+  isStop: 0
   index: 0
 --- !u!114 &1104716586
 MonoBehaviour:
@@ -16432,6 +16449,7 @@ MonoBehaviour:
   - "N\xE0y, ng\u01B0\u01A1i \u0111\xE3 thua r\u1ED3i!"
   - "H\xE3y cho ta bi\u1EBFt em c\u1EE7a ta \u0111ang \u1EDF \u0111\xE2u ?"
   textSpeed: 0.08
+  isStop: 0
   index: 0
 --- !u!114 &1186140213
 MonoBehaviour:
@@ -16551,6 +16569,7 @@ MonoBehaviour:
     luy\u1EC7n t\u1EADp v\xE0 ch\u1EDD \u0111\u1EE3i c\xE1nh c\u1ED5ng xu\u1EA5t
     hi\u1EC7n..."
   textSpeed: 0.1
+  isStop: 0
   index: 0
 --- !u!114 &1209973688
 MonoBehaviour:
@@ -17020,6 +17039,7 @@ MonoBehaviour:
   - "B\xF3ng t\u1ED1i c\u1EE7a ta l\xE0 b\u1EA5t b\u1EA1i"
   - "Sao c\xF3 th\u1EC3 thua m\u1ED9t k\u1EBB nh\u01B0 ng\u01B0\u01A1i \u0111\u01B0\u1EE3c"
   textSpeed: 0.08
+  isStop: 0
   index: 0
 --- !u!114 &1238377513
 MonoBehaviour:

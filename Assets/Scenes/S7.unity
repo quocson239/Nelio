@@ -353,6 +353,7 @@ MonoBehaviour:
   - "Nh\u01B0ng d\u1EF1 c\u1EA3m tr\u01B0\u1EDBc m\u1EB7t r\u1EA5t \u0111\xE1ng s\u1EE3"
   - "M\xECnh kh\xF4ng d\xE1m b\u01B0\u1EDBc ti\u1EBFp."
   textSpeed: 0.08
+  isStop: 0
   index: 0
 --- !u!114 &14996952
 MonoBehaviour:
@@ -26751,6 +26752,7 @@ MonoBehaviour:
   lines:
   - "N\xE0o n\xE0o Willon, sao l\u1EA1i \u0111\xF3n kh\xE1ch nh\u01B0 th\u1EBF."
   textSpeed: 0.08
+  isStop: 0
   index: 0
 --- !u!114 &172052572
 MonoBehaviour:
@@ -28188,6 +28190,7 @@ MonoBehaviour:
   lines:
   - "\u0110\u1EC3 m\xECnh \u0111i ki\u1EC3m tra th\u1EED"
   textSpeed: 0.08
+  isStop: 0
   index: 0
 --- !u!114 &216951843
 MonoBehaviour:
@@ -28285,6 +28288,7 @@ MonoBehaviour:
   lines:
   - "\u0110\u1EC3 m\xECnh \u0111i ki\u1EC3m tra th\u1EED"
   textSpeed: 0.08
+  isStop: 0
   index: 0
 --- !u!114 &216963597
 MonoBehaviour:
@@ -29360,6 +29364,7 @@ MonoBehaviour:
   - "L\xE0 con l\xFAc n\xE3y t\u1EA5n c\xF4ng m\xECnh"
   - "L\u1EBD n\xE0o \u0111\xE2y l\xE0 nh\xE0 c\u1EE7a n\xF3 sao?"
   textSpeed: 0.08
+  isStop: 0
   index: 0
 --- !u!114 &286777158
 MonoBehaviour:
@@ -33837,6 +33842,7 @@ MonoBehaviour:
   - "V\xE0 ng\u01B0\u01A1i l\xE0 v\u1ECB kh\xE1ch x\u1EA5u s\u1ED1 ti\u1EBFp theo
     m\xE0 ta \u0111\xF3n ti\u1EBFp"
   textSpeed: 0.08
+  isStop: 0
   index: 0
 --- !u!114 &561042658
 MonoBehaviour:
@@ -34050,6 +34056,7 @@ MonoBehaviour:
   - "N\xEAn ta kh\xF4ng bu\u1ED3n khi b\u1ECB \u0111\xE1nh b\u1EA1i d\u01B0\u1EDBi
     tay ng\u01B0\u01A1i"
   textSpeed: 0.08
+  isStop: 0
   index: 0
 --- !u!114 &573317035
 MonoBehaviour:
@@ -34148,6 +34155,7 @@ MonoBehaviour:
   - "\"Kia l\xE0 Scarlet m\xE0! Sao l\u1EA1i \u1EDF \u0111\xE2y nh\u1EC9?\""
   - "N\xE0y Scarlet...."
   textSpeed: 0.08
+  isStop: 0
   index: 0
 --- !u!114 &584535353
 MonoBehaviour:
@@ -34347,6 +34355,7 @@ MonoBehaviour:
   - "\u0110\u01B0\u1EE3c r\u1ED3i h\xE3y n\xF3i cho ta bi\u1EBFt Milo \u0111ang \u1EDF
     \u0111\xE2u?"
   textSpeed: 0.08
+  isStop: 0
   index: 0
 --- !u!114 &587744205
 MonoBehaviour:
@@ -35791,6 +35800,7 @@ MonoBehaviour:
   lines:
   - "Ti\u1EBFn l\xEAn n\xE0o!"
   textSpeed: 0.08
+  isStop: 0
   index: 0
 --- !u!114 &680255595
 MonoBehaviour:
@@ -44867,6 +44877,7 @@ MonoBehaviour:
     m\xECnh m\xE0"
   - "Coi nh\u01B0 ch\xFAng ta h\xF2a nh\xE9!"
   textSpeed: 0.08
+  isStop: 0
   index: 0
 --- !u!114 &998426610
 MonoBehaviour:
@@ -46284,6 +46295,7 @@ MonoBehaviour:
   - "M\xECnh s\u1EBD gi\u1EA3i c\u1EE9u Milo v\xE0 d\u1EAFt b\u1EA1n c\xF9ng em \u1EA5y
     ra ngo\xE0i"
   textSpeed: 0.08
+  isStop: 0
   index: 0
 --- !u!114 &1111484296
 MonoBehaviour:
@@ -46901,6 +46913,7 @@ MonoBehaviour:
   lines:
   - "V\u1EADy t\u1ED1t qu\xE1! C\u1EA3m \u01A1n b\u1EA1n r\u1EA5t nhi\u1EC1u"
   textSpeed: 0.08
+  isStop: 0
   index: 0
 --- !u!114 &1147807599
 MonoBehaviour:
@@ -47138,6 +47151,7 @@ GameObject:
   - component: {fileID: 1167247599}
   - component: {fileID: 1167247600}
   - component: {fileID: 1167247601}
+  - component: {fileID: 1167247602}
   m_Layer: 0
   m_Name: SceneCtrl
   m_TagString: Untagged
@@ -47252,6 +47266,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5748526cca67dcf42a4db7dd907a101d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1167247602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1167247598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fae083fc46ae8bc4f871227ed05a76d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1168845854
@@ -47779,6 +47805,7 @@ MonoBehaviour:
   - "Nguy hi\u1EC3m th\u1EADt! C\u1EA3m \u01A1n b\u1EA1n \u0111\xE3 gi\xFAp m\xECnh
     nh\xE9 Scarlet!"
   textSpeed: 0.08
+  isStop: 0
   index: 0
 --- !u!114 &1203882281
 MonoBehaviour:
@@ -51036,6 +51063,7 @@ MonoBehaviour:
   lines:
   - "Ch\u1EAFc l\xE0 th\u1EBF..."
   textSpeed: 0.08
+  isStop: 0
   index: 0
 --- !u!114 &1281769266
 MonoBehaviour:
@@ -52770,6 +52798,7 @@ MonoBehaviour:
   lines:
   - "V\u1EADy ch\xFAng ta \u0111i th\xF4i!"
   textSpeed: 0.08
+  isStop: 0
   index: 0
 --- !u!114 &1456286896
 MonoBehaviour:
@@ -53958,6 +53987,7 @@ MonoBehaviour:
   lines:
   - "Neliooo! C\u1EA9n th\u1EADn sau l\u01B0ng k\xECa!"
   textSpeed: 0.08
+  isStop: 0
   index: 0
 --- !u!114 &1524286190
 MonoBehaviour:
@@ -54573,6 +54603,7 @@ MonoBehaviour:
   lines:
   - "Scarlet ??? B\u1EA1n l\xE0m g\xEC th\u1EBF ???"
   textSpeed: 0.08
+  isStop: 0
   index: 0
 --- !u!114 &1567946648
 MonoBehaviour:
@@ -54864,6 +54895,7 @@ MonoBehaviour:
   - "Ta ch\u1EB3ng hi\u1EC3u g\xEC c\u1EA3! Ta ch\u1EC9 mu\u1ED1n bi\u1EBFt Milo
     \u0111ang \u1EDF \u0111\xE2u."
   textSpeed: 0.08
+  isStop: 0
   index: 0
 --- !u!114 &1574166312
 MonoBehaviour:
@@ -60263,6 +60295,7 @@ MonoBehaviour:
   lines:
   - "L\xE0 m\u1ED9t h\u1EA1t s\xE1ng! Sao n\xF3 l\u1EA1i \u1EDF \u0111\xE2y nh\u1EC9?"
   textSpeed: 0.08
+  isStop: 0
   index: 0
 --- !u!114 &1720544071
 MonoBehaviour:
@@ -61914,6 +61947,7 @@ MonoBehaviour:
   lines:
   - "\"\u0110\xF3n kh\xE1ch ????\""
   textSpeed: 0.08
+  isStop: 0
   index: 0
 --- !u!114 &1819553800
 MonoBehaviour:
@@ -62976,6 +63010,7 @@ MonoBehaviour:
     luy\u1EC7n t\u1EADp v\xE0 ch\u1EDD \u0111\u1EE3i c\xE1nh c\u1ED5ng xu\u1EA5t
     hi\u1EC7n..."
   textSpeed: 0.1
+  isStop: 0
   index: 0
 --- !u!114 &1889075186
 MonoBehaviour:
@@ -64145,6 +64180,7 @@ MonoBehaviour:
   lines:
   - "\u0110\u1EB1ng kia c\xF3 g\xEC \u0111\xF3 ph\xE1t s\xE1ng k\xECa?"
   textSpeed: 0.08
+  isStop: 0
   index: 0
 --- !u!114 &1963731154
 MonoBehaviour:
@@ -66076,6 +66112,7 @@ MonoBehaviour:
   - "Ta mong l\xE0 ng\u01B0\u01A1i s\u1EBD c\u1EE9u \u0111\u01B0\u1EE3c em m\xECnh"
   - "T\u1EA1m bi\u1EC7t nh\xE9!"
   textSpeed: 0.08
+  isStop: 0
   index: 0
 --- !u!114 &2040679271
 MonoBehaviour:
@@ -66208,6 +66245,7 @@ MonoBehaviour:
   - "C\xF3 l\u1EBB c\xE1nh c\u1ED5ng n\xE0y l\xE0 l\u1ED1i tho\xE1t"
   - "Ch\xFAng ta mau \u0111i th\xF4i!"
   textSpeed: 0.08
+  isStop: 0
   index: 0
 --- !u!114 &2046048890
 MonoBehaviour:
@@ -67025,6 +67063,7 @@ MonoBehaviour:
   - "\u1ED2 Nelio, may qu\xE1 g\u1EB7p b\u1EA1n \u1EDF \u0111\xE2y."
   - "M\xECnh s\u1EE3 l\u1EAFm..."
   textSpeed: 0.08
+  isStop: 0
   index: 0
 --- !u!114 &2089280589
 MonoBehaviour:
@@ -67122,6 +67161,7 @@ MonoBehaviour:
   lines:
   - "Chuy\u1EC7n g\xEC \u0111\xE3 x\u1EA3y ra v\u1EADy Scarlet?"
   textSpeed: 0.08
+  isStop: 0
   index: 0
 --- !u!114 &2091685149
 MonoBehaviour:

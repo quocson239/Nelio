@@ -33551,6 +33551,7 @@ GameObject:
   - component: {fileID: 1047963637}
   - component: {fileID: 1047963639}
   - component: {fileID: 1047963640}
+  - component: {fileID: 1047963641}
   m_Layer: 0
   m_Name: SceneCtrl
   m_TagString: Untagged
@@ -33625,6 +33626,18 @@ MonoBehaviour:
   portalSound: {fileID: 1184874846}
   scarletByeSound: {fileID: 85453118}
   lightningSound: {fileID: 1473885031}
+--- !u!114 &1047963641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1047963636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fae083fc46ae8bc4f871227ed05a76d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1053216101
 GameObject:
   m_ObjectHideFlags: 0

@@ -126,7 +126,7 @@ public class S10 : MonoBehaviour
         blackBg.gameObject.SetActive(true);
         blackBg.CrossFadeAlpha(1, 15f, false);
         yield return new WaitForSeconds(16f);
-        SceneManager.LoadScene("S10");
+        SceneManager.LoadScene("Ending");
     }
 
     IEnumerator BGFade()
