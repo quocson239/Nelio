@@ -1,0 +1,351 @@
+fileFormatVersion: 2
+guid: 3901d8774d54fc6449370abafd21d7dc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7616555143666408567
+    second: player katana continuous attack 80x64-Sheet - No Outline_0
+  - first:
+      213: -4350490931674752941
+    second: player katana continuous attack 80x64-Sheet - No Outline_1
+  - first:
+      213: 6356095181604292814
+    second: player katana continuous attack 80x64-Sheet - No Outline_2
+  - first:
+      213: 3509365332524482822
+    second: player katana continuous attack 80x64-Sheet - No Outline_3
+  - first:
+      213: -50931852790839413
+    second: player katana continuous attack 80x64-Sheet - No Outline_4
+  - first:
+      213: -7922007493574141098
+    second: player katana continuous attack 80x64-Sheet - No Outline_5
+  - first:
+      213: -1107526821053365109
+    second: player katana continuous attack 80x64-Sheet - No Outline_6
+  - first:
+      213: -7688629189715924795
+    second: player katana continuous attack 80x64-Sheet - No Outline_7
+  - first:
+      213: 5415964762391686304
+    second: player katana continuous attack 80x64-Sheet - No Outline_8
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: player katana continuous attack 80x64-Sheet - No Outline_0
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 14
+        width: 56
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77c19668c8073b960800000000000000
+      internalID: 7616555143666408567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player katana continuous attack 80x64-Sheet - No Outline_1
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 14
+        width: 56
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 358d7fa2c83ff93c0800000000000000
+      internalID: -4350490931674752941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player katana continuous attack 80x64-Sheet - No Outline_2
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 14
+        width: 37
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec8881244e2653850800000000000000
+      internalID: 6356095181604292814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player katana continuous attack 80x64-Sheet - No Outline_3
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 14
+        width: 37
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60141303d25c3b030800000000000000
+      internalID: 3509365332524482822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player katana continuous attack 80x64-Sheet - No Outline_4
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 14
+        width: 59
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8746aeefbd0b4ff0800000000000000
+      internalID: -50931852790839413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player katana continuous attack 80x64-Sheet - No Outline_5
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 14
+        width: 56
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65bd78d38206f0290800000000000000
+      internalID: -7922007493574141098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player katana continuous attack 80x64-Sheet - No Outline_6
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 14
+        width: 23
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8485e3693641a0f0800000000000000
+      internalID: -1107526821053365109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player katana continuous attack 80x64-Sheet - No Outline_7
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 14
+        width: 23
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c86841fc708c4590800000000000000
+      internalID: -7688629189715924795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player katana continuous attack 80x64-Sheet - No Outline_8
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 14
+        width: 22
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0aca362a14f592b40800000000000000
+      internalID: 5415964762391686304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      player katana continuous attack 80x64-Sheet - No Outline_0: 7616555143666408567
+      player katana continuous attack 80x64-Sheet - No Outline_1: -4350490931674752941
+      player katana continuous attack 80x64-Sheet - No Outline_2: 6356095181604292814
+      player katana continuous attack 80x64-Sheet - No Outline_3: 3509365332524482822
+      player katana continuous attack 80x64-Sheet - No Outline_4: -50931852790839413
+      player katana continuous attack 80x64-Sheet - No Outline_5: -7922007493574141098
+      player katana continuous attack 80x64-Sheet - No Outline_6: -1107526821053365109
+      player katana continuous attack 80x64-Sheet - No Outline_7: -7688629189715924795
+      player katana continuous attack 80x64-Sheet - No Outline_8: 5415964762391686304
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/S1.unity
+    guid: 5b7eaaa2bd91b0440b448309f1e29b84
+  - enabled: 1
+    path: Assets/Scenes/S2.unity
+    guid: 38fe6b83bb7e8084b8b65591b2a17c9f
+  - enabled: 1
+    path: Assets/Scenes/S3.unity
+    guid: d409533b66a931443b0ffc5b99354dbf
+  - enabled: 1
+    path: Assets/Scenes/S4.unity
+    guid: bde93e2322317094b935ec16114b9ffe
+  - enabled: 1
+    path: Assets/Scenes/S5.unity
+    guid: 9c3a5ec45cc209f44af00100e6d0c01b
+  - enabled: 1
+    path: Assets/Scenes/S6Darker.unity
+    guid: fd639b2b24ac0244d9b06019669d066c
+  - enabled: 1
+    path: Assets/Scenes/S7.unity
+    guid: 0be4444115f9f4048a46628fd6a04618
+  - enabled: 1
+    path: Assets/Scenes/S8Losmind.unity
+    guid: 5dc5955c85507d44bb481b4588644ac0
+  - enabled: 1
+    path: Assets/Scenes/S9Undead.unity
+    guid: d755952d1d3c73049a9706aeb27af1e1
+  - enabled: 1
+    path: Assets/Scenes/S10.unity
+    guid: 3ea11f7196d5acb4fa51f9a8e0f5d37a
+  - enabled: 1
+    path: Assets/Scenes/Ending.unity
+    guid: 89ff56561145f6a41afba67b7c05b9e0
+  m_configObjects:
+    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  m_UseUCBPForAssetBundles: 0
